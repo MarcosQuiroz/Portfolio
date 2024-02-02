@@ -1,11 +1,11 @@
 body
 {
     margin: 0;
-    background-color: black;
+    background: black;
     text-align: center;
     text-size-adjust: 100%;
     font: bold;
-    font-family: 'AlegreyaSansSC', sans-serif;
+    /*font-family: 'AlegreyaSansSC', sans-serif;*/
     font-size: 22px;
     color: white;
 }
