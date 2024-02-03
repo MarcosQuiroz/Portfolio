@@ -32,31 +32,29 @@
             max-width: 800px; /* Adjusted maximum width for the content box */
             padding: 20px;
             margin: 50px auto;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgb(0, 0, 0); /* Remove transparency */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
         .top-tab {
             text-align: center;
-            background: linear-gradient(to left, purple, orange);
+            background: linear-gradient(to right, purple, orange);
             padding: 10px;
             display: flex;
             justify-content: space-between;
-        }
-}       
-        .name {
-            float: left;
+            align-items: center; /* Align items vertically in the center */
         }
 
-        .buttons {
-            float: right;
+        .name {
+            font-size: 16px; /* Adjusted font size */
         }
 
         .left-tab {
             float: left;
             background: linear-gradient(to bottom, purple, orange);
             padding: 10px;
+            height: calc(100% - 10px); /* Adjusted height */
         }
 
         .social-bar {
@@ -72,8 +70,8 @@
             font-size: 18px;
         }
 
-        h1, p {
-            color: white;
+        p {
+            overflow: auto; /* Prevent text overflow */
         }
     </style>
 </head>
