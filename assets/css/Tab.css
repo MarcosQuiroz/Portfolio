@@ -27,5 +27,10 @@
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     padding: 5%;
-    margin-left: auto; /* This will push the .other-element to the right */
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.links:hover {
+   font-size: 16px;
 }
