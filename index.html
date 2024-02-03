@@ -26,11 +26,11 @@
 
         .container {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 80%;
-            height: 80%;
-            margin: 50px;
+            top: 50px;
+            left: 50px;
+            width: calc(80% - 100px); /* Adjusted width for the container */
+            height: calc(80% - 100px); /* Adjusted height for the container */
+            margin: 0 auto;
             background: rgba(0, 0, 0, 0.8);
             padding: 20px;
             z-index: 1;
@@ -46,18 +46,18 @@
 
         .button-bar {
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 10%;
+            left: 50px; /* Adjusted left position */
+            width: calc(80% - 100px); /* Adjusted width for the button bar */
+            height: 50px; /* Adjusted height for the button bar */
             background: linear-gradient(to right, purple, orange);
             text-align: center;
         }
 
         .social-bar {
-            top: 10%;
+            top: 50px; /* Adjusted top position */
             left: 0;
-            width: 10%;
-            height: 80%;
+            width: 50px; /* Adjusted width for the social bar */
+            height: calc(80% - 100px); /* Adjusted height for the social bar */
             background: linear-gradient(to bottom, purple, orange);
             text-align: center;
         }
