@@ -37,12 +37,26 @@
             z-index: 1;
         }
 
-        .combined-tab {
+        .top-tab {
+            text-align: center;
+            background: linear-gradient(to left, purple, orange);
+            padding: 10px;
             display: flex;
+            justify-content: space-between;
+        }
+}       
+        .name {
+            float: left;
+        }
+
+        .buttons {
+            float: right;
+        }
+
+        .left-tab {
+            float: left;
             background: linear-gradient(to bottom, purple, orange);
             padding: 10px;
-            align-items: center;
-            justify-content: space-between;
         }
 
         .social-bar {
@@ -67,24 +81,24 @@
     <div class="background"></div>
 
     <div class="content-box">
-        <div class="combined-tab">
-            <h1>Your Name</h1>
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <!-- Add more buttons for different sections of your portfolio -->
+        <div class="top-tab">
+            <div class="name">
+                <h1>Your Name</h1>
+            </div>
+            <div class="buttons">
+                <button>Button 1</button>
+                <button>Button 2</button>
+            </div>
         </div>
 
-        <div class="social-bar">
+        <div class="left-tab social-bar">
             <a href="#" target="_blank">Icon 1</a>
             <a href="#" target="_blank">Icon 2</a>
-            <!-- Add more social icons as needed -->
         </div>
 
         <div class="main-content">
             <p>hahahdjndksdkklgfkjsgfkjhsbfkjhbsgkygkergfkyregfkygeskrygekuryfgskurygfskueyrgfkeusrygukesyfgrsukrygfakurygakryfgakurygfyukayrgfkauygfrak</p>
-            <!-- Add the rest of your portfolio content here -->
         </div>
     </div>
 </body>
 </html>
-
