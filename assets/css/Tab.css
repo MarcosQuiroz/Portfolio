@@ -27,10 +27,10 @@
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     padding: 5%;
-    text-decoration: none;
+    text-decoration: none !important;
     margin-left: auto;
 }
 
-.links:hover {
+.link:hover {
    font-size: 16px;
 }
