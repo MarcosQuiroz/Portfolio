@@ -24,10 +24,19 @@
         </div>
     </div>
     <script>
-        async function loadContent(targetId, content) {
-            const response = await fetch(`${content}.html`);
-            const htmlContent = await response.text();
-            document.getElementById(targetId).innerHTML = htmlContent;
+            async function loadContent(targetId, content) {
+            try {
+                const response = await fetch(`${content}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch ${content}.html: ${response.statusText}`);
+                }
+
+                const htmlContent = await response.text();
+                document.getElementById(targetId).innerHTML = htmlContent;
+            } 
+            catch (error) {
+                console.error(error);
+             }
         }
 
         window.onload = function() {
