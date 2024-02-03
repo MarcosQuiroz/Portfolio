@@ -25,12 +25,15 @@
 
         .content-box {
             position: absolute;
-            top: 10px; /* Adjusted top position */
-            left: 10px; /* Adjusted left position */
-            right: 10px; /* Adjusted right position */
-            bottom: 10px; /* Adjusted bottom position */
-            max-width: 800px; /* Adjusted maximum width for the content box */
+            top: 5%;
+            left: 5%;
+            bottom: 5%;
+            right: 5%;
+            width: 90%;
+            height: 90%;
+            max-width: 800px;
             padding: 20px;
+            margin: 50px auto;
             background: rgb(0, 0, 0);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             z-index: 1;
@@ -46,12 +49,8 @@
         }
 
         .name {
-            font-size: 16px;
+            font-size: 12px;
             margin: 0;
-        }
-
-        .buttons {
-            font-size: 16px; /* Adjusted font size for buttons */
         }
 
         .left-tab {
@@ -59,14 +58,13 @@
             background: linear-gradient(to bottom, purple, orange);
             padding: 10px;
             height: 100%;
-            margin-right: 10px; /* Added right margin */
         }
 
         .social-bar {
             float: left;
             width: 50px;
-            height: 100%;
-            margin: 0;
+            height: 100%; /* Adjusted height */
+            margin: 0; /* Removed margin */
         }
 
         .social-bar a {
@@ -78,11 +76,12 @@
         }
 
         .main-content {
-            overflow: hidden;
+            padding-left: 100px;
+            width: 50%;
         }
 
         p {
-            margin: 0;
+            margin: 0; /* Removed margin for p */
         }
     </style>
 </head>
