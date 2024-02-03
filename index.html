@@ -31,13 +31,13 @@
                     throw new Error(`Failed to fetch ${content}.html: ${response.statusText}`);
                 }
                 const htmlContent = await response.text();
-                document.getElementById(targetId).innerHTML = htmlContent;
+                document.querySelector(`.${targetClass}`).innerHTML = htmlContent;
             } catch (error) {
                 console.error(error);
             }
         }
     
-        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function() {
             loadContent('content', 'profile');
     
             document.getElementById('profile-link').addEventListener('click', function() {
