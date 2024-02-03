@@ -26,32 +26,31 @@
         .container {
             position: relative;
             width: 60%;
-            margin: 50px auto;
-            background: rgba(0, 0, 0, 0.8);
+            height: 80%;
+            /*margin: 50px auto;*/
+            background: rgba(0, 0, 0, 1.0);
             padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            z-index: 2; /* Bring the container to the front */
+            z-index: 1;
         }
 
         .social-bar, .side-bar {
             position: fixed;
             padding: 10px;
             color: white;
-            width: calc((100% - 60%) / 2); /* Adjust the width of the bars */
             z-index: 1;
         }
 
         .social-bar {
-            top: 0;
-            left: 0;
+            width: 80%;
+            height: 5%;
             background: linear-gradient(to right, purple, orange);
             text-align: right;
         }
 
         .side-bar {
-            top: 0;
-            right: 0;
-            background: linear-gradient(to right, purple, orange);
+            width: 10%;
+            height: 80%;
+            background: linear-gradient(to bottom, purple, orange);
             padding: 20px;
             text-align: left;
         }
