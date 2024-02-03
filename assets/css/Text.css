@@ -1,0 +1,18 @@
+h1, p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #DEB992;
+    font-size: 22px;
+}
+
+p {
+    color: gray;
+    font-size: 14px;
+}
+
+.profile p {
+    color: green;
+}
