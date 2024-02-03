@@ -15,8 +15,8 @@
         <div class="name">
             Marcos Fabian Quiroz
         </div>
-        <a href="#profile" class="link" onclick="loadContent('content', 'profile')">Profile</a>
-        <a href="#schoolprojects" class="link" onclick="loadContent('content', 'schoolprojects')">School Projects</a>
+        <a id="profile-link" href="#" class="link">Profile</a>
+        <a id="schoolprojects-link" href="#" class="link">School Projects</a>
     </div>
     <div class="content-box">
         <div class="content">
@@ -24,24 +24,32 @@
         </div>
     </div>
     <script>
-            async function loadContent(targetId, content) {
+        async function loadContent(targetId, content) {
             try {
                 const response = await fetch(`${content}.html`);
                 if (!response.ok) {
                     throw new Error(`Failed to fetch ${content}.html: ${response.statusText}`);
                 }
-
                 const htmlContent = await response.text();
                 document.getElementById(targetId).innerHTML = htmlContent;
-            } 
-            catch (error) {
+            } catch (error) {
                 console.error(error);
-             }
+            }
         }
-
-        window.onload = function() {
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load default content on page load
             loadContent('content', 'profile');
-        };
+    
+            // Attach click event handlers to your links
+            document.getElementById('profile-link').addEventListener('click', function() {
+                loadContent('content', 'profile');
+            });
+    
+            document.getElementById('schoolprojects-link').addEventListener('click', function() {
+                loadContent('content', 'schoolprojects');
+            });
+        });
     </script>
 </body>
 </html>
