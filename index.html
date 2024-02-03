@@ -25,39 +25,40 @@
 
         .container {
             position: relative;
-            width: 60%; /* Adjust the width of your content area */
+            width: 60%;
             margin: 50px auto;
-            background: rgba(0, 0, 0, 0.8); /* Dark background color */
+            background: rgba(0, 0, 0, 0.8);
             padding: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 2; /* Bring the container to the front */
         }
 
         .social-bar, .side-bar {
             position: fixed;
             padding: 10px;
             color: white;
-            z-index: 1; /* Bring bars to the front */
+            width: calc((100% - 60%) / 2); /* Adjust the width of the bars */
+            z-index: 1;
         }
 
         .social-bar {
             top: 0;
             left: 0;
-            width: 100%;
-            background: linear-gradient(to right, purple, orange); /* Gradient color for the social bar */
+            background: linear-gradient(to right, purple, orange);
             text-align: right;
         }
 
         .side-bar {
             top: 0;
-            left: 0;
-            height: 100%;
-            background: linear-gradient(to right, purple, orange); /* Gradient color for the side bar */
+            right: 0;
+            background: linear-gradient(to right, purple, orange);
             padding: 20px;
             text-align: left;
         }
 
         .social-bar a, .side-bar button {
-            margin-bottom: 10px; /* Add spacing between icons/buttons */
+            display: block;
+            margin-bottom: 10px;
             color: white;
             text-decoration: none;
             font-size: 18px;
