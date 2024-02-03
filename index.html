@@ -31,7 +31,7 @@
                     throw new Error(`Failed to fetch ${content}.html: ${response.statusText}`);
                 }
                 const htmlContent = await response.text();
-                document.querySelector(`.${targetClass}`).innerHTML = htmlContent;
+                document.querySelector(`.${targetId}`).innerHTML = htmlContent;
             } catch (error) {
                 console.error(error);
             }
