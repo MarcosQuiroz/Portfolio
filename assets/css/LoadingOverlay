@@ -1,5 +1,5 @@
 #loading-overlay {
-  display: flex;
+  display: none; /* Initially hide the loading overlay */
   justify-content: center;
   align-items: center;
   position: fixed;

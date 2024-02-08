@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="assets/css/LoadingOverlay.css">
 </head>
 <body>
-    <script src="assets/css/LoadingScreen.js">
-        var event = new Event("LoadingScreen");
-        document.dispatchEvent(event);
-        setTimeout(stopLoading, 3000);
-    </script>
+    <script src="assets/js/LoadingScreen.js"></script>
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+    
     <div class="background"></div>
 
     <div class="tab">
