@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="assets/css/LoadingOverlay.css">
 </head>
 <body>
-    <script src="assets/js/LoadingScreen.js"></script>
+    <script src="assets/js/LoadingScreen.js">
+         var event = new Event("LoadingScreen");
+        document.dispatchEvent(event);
     <div id="loading-overlay" class="loading-overlay">
         <div class="spinner"></div>
     </div>
-    
+    </script>
+
     <div class="background"></div>
 
     <div class="tab">
