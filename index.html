@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="assets/css/Background.css">
     <link rel="stylesheet" href="assets/css/Tab.css">
     <link rel="stylesheet" href="assets/css/Text.css">
+    <link rel="stylesheet" href="assets/css/LoadingOverlay.css">
 </head>
 <body>
+    <script src="LoadingScreen.js">
+        var event = new Event("LoadingScreen");
+        document.dispatchEvent(event);
+        setTimeout(stopLoading, 3000);
+    </script>
     <div class="background"></div>
 
     <div class="tab">
@@ -23,31 +29,5 @@
     </div>
     <div class="line"></div>
     <div class="content"></div>
-    <script>
-        async function loadContent(targetId, content) {
-            try {
-                const response = await fetch(`${content}.html`);
-                if (!response.ok) {
-                    throw new Error(`Failed to fetch ${content}.html: ${response.statusText}`);
-                }
-                const htmlContent = await response.text();
-                document.querySelector(`.${targetId}`).innerHTML = htmlContent;
-            } catch (error) {
-                console.error(error);
-            }
-        }
-    
-            document.addEventListener('DOMContentLoaded', function() {
-            loadContent('content', 'profile');
-    
-            document.getElementById('profile-link').addEventListener('click', function() {
-                loadContent('content', 'profile');
-            });
-    
-            document.getElementById('schoolprojects-link').addEventListener('click', function() {
-                loadContent('content', 'schoolprojects');
-            });
-        });
-    </script>
 </body>
 </html>
