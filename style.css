@@ -9,11 +9,11 @@ body{
   color: #fff;
 }
 .topbar {
-  background-color: #1b1b1b;
+  background: #1b1b1b;
   margin: 0;
   margin-top: 0%;
   width: 100%;
-  margin-top: 100vh;
+  height: 100px
 }
 .container{
   width: 100%;
@@ -75,7 +75,7 @@ nav ul li a:hover{
 }
 .bar {
   background-color: #1f2f3f;
-  background: radial-gradient(circle at bottom center, #e31e67 0%, #1f2f3f 50%);
+  /*background: radial-gradient(circle at bottom center, #e31e67 0%, #1f2f3f 30%);*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,15 +86,16 @@ nav ul li a:hover{
 .content {
   max-width: 600px;
   text-align: center;
-  color: #e31e67;
+  color: ghostwhite;
 }
 .content h2{
   font-size: 60px
 }
 .content p{
   margin-top: 10px;
-  line-height: 25px;
+  line-height: 30px;
   color: #9ea1a5;
+  font-size: 17px;
 }
 a{
   color: #fff;
@@ -103,9 +104,9 @@ a{
   margin-top: 30px;
 }
 .resume{
-  color: #000;
+  color: ghostwhite;
   text-decoration: none;
-  background: #fff;
+  background: linear-gradient(to right, #e31e67, purple);
   padding: 9px 25px;
   font-weight: bold;
   border-radius: 6px;
