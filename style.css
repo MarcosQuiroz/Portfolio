@@ -57,9 +57,14 @@ nav ul li a:hover{
   transition: 0.5s;
   font-size: 18px;
 }
+.bar {
+    width: 100%;
+    background-color: red;
+    margin-top: 10%;
+}
 .content{
-  margin-top: 10%;
   max-width: 600px;
+  text-align: center;
 }
 .content h2{
   font-size: 60px
