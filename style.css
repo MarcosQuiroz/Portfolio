@@ -8,11 +8,19 @@
 body{
   color: #fff;
 }
+.topbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
 .container{
   width: 100%;
   height: 100vh;
   /*background-image: url(back.jpg);*/
-  background-color: black;
+  background-color: #f1f2f6;
   background-position: center;
   background-size: cover;
   padding-top: 35px;
@@ -28,9 +36,11 @@ nav{
 .logo a{
   font-size: 40px;
   text-decoration: none;
+  color: #27187e;
+  font-weight: 1000;
 }
 span{
-  color: #f9004d;
+  color: #f1f2f6;
 }
 nav ul li{
   display: inline-block;
@@ -58,13 +68,19 @@ nav ul li a:hover{
   font-size: 18px;
 }
 .bar {
-    width: 100%;
-    background-color: red;
+    background-color: #27187e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 95%;
     margin-top: 10%;
+    border-radius: 15px;
 }
 .content{
   max-width: 600px;
   text-align: center;
+  color: #ff8600
 }
 .content h2{
   font-size: 60px
@@ -72,6 +88,7 @@ nav ul li a:hover{
 .content p{
   margin-top: 10px;
   line-height: 25px;
+  color: #f1f2f6
 }
 a{
   color: #fff;
