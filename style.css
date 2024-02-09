@@ -6,7 +6,8 @@
   font-family: 'Karla', sans-serif;
 }
 body{
-  color: black;
+  color: #fff;
+  background-color: black;
 }
 .container{
   width: 100%;
