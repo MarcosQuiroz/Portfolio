@@ -12,7 +12,7 @@ body{
   width: 100%;
   height: 100vh;
   /*background-image: url(back.jpg);*/
-  background-color: #f1f2f6;
+  background-color: #1c2a39;
   background-position: center;
   background-size: cover;
   padding-top: 35px;
@@ -28,11 +28,14 @@ nav{
 .logo a{
   font-size: 40px;
   text-decoration: none;
-  color: #27187e;
+    background: linear-gradient(to right, #e31e67, purple);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-fill-color: transparent;
   font-weight: 1000;
 }
 span{
-  color: #f1f2f6;
+
 }
 nav ul li{
   display: inline-block;
@@ -59,20 +62,25 @@ nav ul li a:hover{
   transition: 0.5s;
   font-size: 18px;
 }
-.bar {
-    background-color: #27187e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    width: 95%;
-    margin-top: 10%;
-    border-radius: 15px;
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.content{
+.bar {
+  background-color: #1f2f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  margin-top: 10%;
+
+}
+.content {
   max-width: 600px;
   text-align: center;
-  color: #ff8600
+  color: #e31e67;
 }
 .content h2{
   font-size: 60px
@@ -80,7 +88,7 @@ nav ul li a:hover{
 .content p{
   margin-top: 10px;
   line-height: 25px;
-  color: #f1f2f6
+  color: #9ea1a5;
 }
 a{
   color: #fff;
