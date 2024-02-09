@@ -68,23 +68,20 @@ nav ul li a:hover{
   justify-content: center;
 }
 .bar {
-    background-color: #1f2f3f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10%;
-    margin: 0;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .content {
-    max-width: 600px;
-    text-align: center;
-    color: #e31e67;
-  }
+  background-color: #1f2f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  margin-top: 10%;
+
+}
+.content {
+  max-width: 600px;
+  text-align: center;
+  color: #e31e67;
+}
 .content h2{
   font-size: 60px
 }
