@@ -29,7 +29,7 @@ body{
   background-size: cover;
 }
 .logo a{
-  font-size: 40px;
+  font-size: 28px;
   text-decoration: none;
   background: linear-gradient(to right, #e31e67, purple);
   background-clip: text;
@@ -78,7 +78,7 @@ li a:hover{
   .logo {
     margin: 10px auto;
     padding: 10px;
-    font-size: 30px;
+    font-size: 10px;
   }
 
   .link {
