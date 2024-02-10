@@ -28,7 +28,7 @@ body{
   background-position: center;
   background-size: cover;
 }
-.logo a{
+.logo{
   font-size: 28px;
   text-decoration: none;
   background: linear-gradient(to right, #e31e67, purple);
