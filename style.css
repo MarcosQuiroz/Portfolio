@@ -65,17 +65,17 @@ body{
     padding: 5vh;
     margin-right: auto;
   }
-  .LinkButton{
-    color: ghostwhite;
-    text-decoration: none;
-    padding: 2px 6px;
-    font-weight: bold;
+  .LinkButton {
+    background-color: #e31e67; /* Set the background color for the circle */
+    width: 30px; /* Adjust the size of the circle */
+    height: 30px; /* Adjust the size of the circle */
+    border-radius: 50%; /* Make it circular */
+    display: inline-block;
+    margin-left: 10px; /* Add spacing if needed */
     transition: 0.5s;
   }
-  .LinkButton:hover{
-    background: -webkit-linear-gradient(#e31e67, purple);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .LinkButton:hover {
+    background-color: purple; /* Change color on hover if desired */
   }
 }
 .bar {
