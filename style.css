@@ -66,6 +66,33 @@ li a{
 li a:hover{
   color: #f9004d;
 }
+@media only screen and (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .link {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .link li {
+    display: block;
+    margin: 5px;
+  }
+
+  .resume {
+    margin-top: 10px;
+  }
+}
 .bar {
   background-color: #1f2f3f;
   /*background: radial-gradient(circle at bottom center, #e31e67 0%, #1f2f3f 30%);*/
