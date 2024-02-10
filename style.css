@@ -46,7 +46,7 @@ body{
   color: ghostwhite;
   text-decoration: none;
   background: linear-gradient(to left, #e31e67, purple);
-  padding: 9px 25px;
+  padding: 4px 10px;
   font-weight: bold;
   border-radius: 6px;
   transition: 0.5s;
@@ -76,7 +76,7 @@ li a:hover{
   }
 
   .logo {
-    margin: 10px auto;
+    margin: 18px auto;
     padding: 10px;
     font-size: 10px;
   }
@@ -96,6 +96,7 @@ li a:hover{
 
   .resume {
     margin-top: 10px;
+    padding: 3px 8px;
   }
 }
 .bar {
@@ -118,10 +119,9 @@ li a:hover{
   font-size: 60px
 }
 .content p{
-  margin-top: 10px;
-  line-height: 30px;
+  line-height: 40px;
   color: #9ea1a5;
-  font-size: 17px;
+  font-size: 20px;
 }
 a{
   color: #fff;
