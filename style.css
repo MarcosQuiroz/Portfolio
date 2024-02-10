@@ -70,33 +70,23 @@ li a:hover{
 }
 @media only screen and (max-width: 600px) {
   .topbar {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
+
   }
 
   .logo {
-    margin: 18px auto;
-    padding: 10px;
-    font-size: 18px;
+  
   }
 
   .link {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
+
   }
 
   .link li {
-    display: inline-block;
-    margin: 5px;
+
   }
 
-   .resume {
-    margin-top: 10px;
-    padding: 3px 7px;
+  .resume {
+
   }
 }
 .bar {
@@ -119,9 +109,9 @@ li a:hover{
   font-size: 60px
 }
 .content p{
-  line-height: 30px;
+  line-height: 40px;
   color: #9ea1a5;
-  font-size: 18px;
+  font-size: 20px;
 }
 a{
   color: #fff;
