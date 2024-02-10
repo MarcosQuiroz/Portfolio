@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Karla', sans-serif;
+  font-family: "Teko", sans-serif;
+  /*font-family: 'Karla', sans-serif;*/
 }
 body{
   color: #fff;
@@ -76,16 +78,19 @@ li a:hover{
   .logo {
     margin: 10px auto;
     padding: 10px;
+    font-size: 30px;
   }
 
   .link {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 10px;
     text-align: center;
   }
 
   .link li {
-    display: block;
+    display: inline-block;
     margin: 5px;
   }
 
