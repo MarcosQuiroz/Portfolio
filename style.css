@@ -78,7 +78,7 @@ li a:hover{
   .logo {
     margin: 18px auto;
     padding: 10px;
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .link {
@@ -94,9 +94,9 @@ li a:hover{
     margin: 5px;
   }
 
-  .resume {
+   .resume {
     margin-top: 10px;
-    padding: 3px 8px;
+    padding: 3px 7px;
   }
 }
 .bar {
@@ -119,9 +119,9 @@ li a:hover{
   font-size: 60px
 }
 .content p{
-  line-height: 40px;
+  line-height: 30px;
   color: #9ea1a5;
-  font-size: 20px;
+  font-size: 18px;
 }
 a{
   color: #fff;
