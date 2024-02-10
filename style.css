@@ -56,7 +56,7 @@ body{
 }
 @media only screen and (max-width: 600px) {
   .name{
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     background: linear-gradient(to right, #e31e67, purple);
     background-clip: text;
@@ -66,16 +66,18 @@ body{
     margin-right: auto;
   }
   .LinkButton {
-    background-color: #e31e67; /* Set the background color for the circle */
-    width: 30px; /* Adjust the size of the circle */
-    height: 30px; /* Adjust the size of the circle */
-    border-radius: 50%; /* Make it circular */
+    background-color: #e31e67;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     display: inline-block;
-    margin-left: 10px; /* Add spacing if needed */
+    margin-left: 10px;
     transition: 0.5s;
+    text-indent: -9999px; /* Hide text off-screen */
   }
+
   .LinkButton:hover {
-    background-color: purple; /* Change color on hover if desired */
+    background-color: purple;
   }
 }
 .bar {
