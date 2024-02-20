@@ -67,13 +67,9 @@ body{
     background-clip: text;
     color: transparent;
     font-weight: 1000;
-    padding: 5vh;
-    margin-right: auto;
   }
 
   .linksBar {
-    padding: 5vh;
-    margin-right: auto;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
