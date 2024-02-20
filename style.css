@@ -63,12 +63,12 @@ body{
     color: transparent;
     font-weight: 1000;
     padding: 5vh;
-    margin-right: auto;
+    margin: 0;
   }
 
   .linksBar{
     padding: 10%;
-    margin-left: auto;
+    margin: 0;
 }
   .LinkButton {
     background-color: #e31e67;
