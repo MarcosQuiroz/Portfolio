@@ -56,11 +56,12 @@ body{
 }
 @media only screen and (max-width: 600px) {
   .topbar {
-    flex-direction: column; /* Stack items vertically on mobile */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .name {
-    font-size: 25px;
+    font-size: 18px;
     text-decoration: none;
     background: linear-gradient(to right, #e31e67, purple);
     background-clip: text;
@@ -68,11 +69,13 @@ body{
     font-weight: 1000;
     padding: 5vh;
     margin-right: auto;
+    margin-bottom: 10px;
   }
 
   .linksBar {
     padding: 10%;
     margin-left: auto;
+    margin-right: auto;
   }
 
   .LinkButton {
@@ -81,8 +84,8 @@ body{
     height: 30px;
     border-radius: 50%;
     display: inline-block;
-    padding: 5vh;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
     transition: 0.5s;
     text-indent: -9999px;
   }
