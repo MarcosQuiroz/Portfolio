@@ -69,11 +69,10 @@ body{
     font-weight: 1000;
     padding: 5vh;
     margin-right: auto;
-    margin-bottom: 10px;
   }
 
   .linksBar {
-    padding: 0;
+    padding: 5vh;
     margin: 0;
     display: flex;
     align-items: flex-start;
@@ -82,12 +81,10 @@ body{
 
   .LinkButton {
     background-color: #e31e67;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     display: inline-block;
-    margin-left: 10px;
-    margin-bottom: 10px;
     transition: 0.5s;
     text-indent: -9999px;
   }
