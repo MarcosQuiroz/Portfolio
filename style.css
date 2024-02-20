@@ -68,11 +68,13 @@ body{
     color: transparent;
     font-weight: 1000;
     padding: 0;
+    padding-left: 5vw;
     margin-right: auto;
   }
 
   .linksBar {
     padding: 0;
+    padding-left: 5vw;
     margin: 0;
     display: flex;
     align-items: flex-start;
@@ -81,11 +83,11 @@ body{
 
   .LinkButton {
     background-color: #e31e67;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 5vw;
+    margin-right: 2vw;
     transition: 0.5s;
     text-indent: -9999px;
   }
