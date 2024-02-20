@@ -69,13 +69,14 @@ body{
     font-weight: 1000;
     padding: 5vh;
     margin-right: auto;
-    margin-bottom: 10px;
   }
 
   .linksBar {
-    padding: 10%;
-    margin-left: auto;
+    padding: 5vh;
     margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
   }
 
   .LinkButton {
