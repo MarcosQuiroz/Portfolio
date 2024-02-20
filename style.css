@@ -61,7 +61,7 @@ body{
   }
 
   .name {
-    font-size: 18px;
+    font-size: 25px;
     text-decoration: none;
     background: linear-gradient(to right, #e31e67, purple);
     background-clip: text;
@@ -70,6 +70,7 @@ body{
   }
 
   .linksBar {
+    margin-right: auto;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
