@@ -56,24 +56,24 @@ body{
 }
 @media only screen and (max-width: 600px) {
   .name{
-    font-size: 18px;
+    font-size: 10px;
     text-decoration: none;
     background: linear-gradient(to right, #e31e67, purple);
     background-clip: text;
     color: transparent;
     font-weight: 1000;
     padding: 5vh;
-    margin: 0;
+    margin-right: auto;
   }
 
   .linksBar{
     padding: 10%;
-    margin: 0;
+    margin-left: auto;
 }
   .LinkButton {
     background-color: #e31e67;
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     display: inline-block;
     margin-left: 10px;
