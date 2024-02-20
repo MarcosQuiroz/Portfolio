@@ -92,8 +92,13 @@ body{
     text-indent: -9999px;
   }
 
-  .LinkButton:hover {
+  .LinkButton:hover, .LinkButton:active, .LinkButton:focus {
     background-color: purple;
+  }
+
+  .LinkButton img {
+    width: 100%;
+    border-radius: 50%;
   }
 }
 .bar {
