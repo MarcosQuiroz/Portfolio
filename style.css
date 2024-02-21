@@ -82,7 +82,8 @@ body{
   }
 
   .LinkButton {
-    background-color: #e31e67;
+    /*background-color: #e31e67;*/
+    background-color: transparent;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -100,7 +101,7 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: #fff;
+    border: 2px solid #fff;
   }
 }
 .bar {
