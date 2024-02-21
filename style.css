@@ -90,6 +90,7 @@ body{
     margin-right: 2vw;
     transition: 0.5s;
     text-indent: -9999px;
+    position: relative;
   }
 
   .LinkButton:hover, .LinkButton:active, .LinkButton:focus {
@@ -102,6 +103,9 @@ body{
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #fff;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }
 .bar {
