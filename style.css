@@ -91,6 +91,7 @@ body{
   }
 
   .LinkButton {
+    font-size: 0;
     background-color: #e31e67;
     width: 35px;
     height: 35px;
@@ -103,7 +104,7 @@ body{
   }
 
   .LinkButton:hover, .LinkButton:active, .LinkButton:focus {
-    background-color: purple;
+    background-color: -webkit-linear-gradient(purple, purple);
   }
 
   .LinkButton img {
