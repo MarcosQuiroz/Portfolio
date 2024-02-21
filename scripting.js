@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
   document.getElementById('resumeLink').addEventListener('click', function (event) {
     event.preventDefault();
 
