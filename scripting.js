@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  document.getElementById('resumeLink').addEventListener('click', function (event) {
-    // Prevent the default behavior (opening the link)
-    event.preventDefault();
-  
-    // Open a download window for mobile devices
-    if (window.innerWidth <= 600) {
-      // Replace 'your_resume_file.pdf' with the actual file path
-      window.open('your_resume_file.pdf', '_blank');
-    } else {
-      // For PC, open the resume.html page
-      window.location.href = 'resume.html';
-    }
-  });
+
+document.getElementById('resumeLink').addEventListener('click', function (event) {
+
+  event.preventDefault();
+  const isMobile = window.innerWidth <= 600;
+
+  if (isMobile) {
+    const mobileDownloadLink = document.getElementById('mobileDownloadLink');
+    mobileDownloadLink.click();
+  } else {
+    window.location.href = 'resume.html';
+  }
+});
