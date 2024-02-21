@@ -93,7 +93,7 @@ body{
     overflow: hidden;
   }
 
-  .LinkButton:hover, .LinkButton:active, .LinkButton:focus {
+  .LinkButton:hover, .LinkButton:focus {
     background-color: purple;
   }
 
