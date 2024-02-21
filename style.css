@@ -145,3 +145,8 @@ body{
 a{
   color: #fff;
 }
+.resume {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
