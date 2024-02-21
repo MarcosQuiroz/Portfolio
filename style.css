@@ -103,10 +103,11 @@ body{
     overflow: hidden;
   }
 
-  .LinkButton:hover, .LinkButton:active, .LinkButton:focus {
+  .LinkButton:hover, .LinkButton:active, .LinkButton:focus, .LinkButton:disabled {
     background-color: -webkit-linear-gradient(purple, purple);
+    font-size: 0;
   }
-
+  
   .LinkButton img {
     display: block;
     height: 100%;
