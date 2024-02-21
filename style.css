@@ -46,6 +46,7 @@ body{
   color: ghostwhite;
   text-decoration: none;
   padding: 4px 10px;
+  font-size: 15px;
   font-weight: bold;
   transition: 0.5s;
 }
@@ -54,6 +55,14 @@ body{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+  .LinkButton:active {
+    font-size: 20px;
+  }
+
+  .LinkButton img {
+    display: none;
+  }
+
 @media only screen and (max-width: 600px) {
   .topbar {
     flex-direction: column;
@@ -93,14 +102,9 @@ body{
     overflow: hidden;
   }
 
-  .LinkButton:hover {
+  .LinkButton:hover, .LinkButton:active, .LinkButton:focus {
     background-color: purple;
   }
-
-  .LinkButton:active {
-    box-shadow: 0 0 0 5px purple; /* Add a box-shadow on touch */
-  }
-
 
   .LinkButton img {
     height: 100%;
