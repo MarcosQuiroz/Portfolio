@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-document.getElementById('resumeLink').addEventListener('click', function (event) {
-
-  event.preventDefault();
-  const isMobile = window.innerWidth <= 600;
-
-  if (isMobile) {
-    const mobileDownloadLink = document.getElementById('mobileDownloadLink');
-    mobileDownloadLink.click();
-  } else {
-    window.location.href = 'resume.html';
-  }
-});
+  document.getElementById('resumeLink').addEventListener('click', function (event) {
+    event.preventDefault();
+  
+    const isMobile = window.innerWidth <= 600;
+  
+    if (isMobile) {
+      const downloadLink = document.getElementById('mobileDownloadLink');
+      downloadLink.click();
+    } else {
+      window.location.href = 'resume.html';
+    }
+  });
