@@ -93,10 +93,14 @@ body{
     overflow: hidden;
   }
 
-  .LinkButton:hover, .LinkButton:focus {
-    width: 50px;
-    height: 50px;
+  .LinkButton:hover {
+    background-color: purple;
   }
+
+  .LinkButton:active {
+    box-shadow: 0 0 0 5px purple; /* Add a box-shadow on touch */
+  }
+
 
   .LinkButton img {
     height: 100%;
