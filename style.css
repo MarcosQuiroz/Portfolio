@@ -82,8 +82,7 @@ body{
   }
 
   .LinkButton {
-    /*background-color: #e31e67;*/
-    background-color: transparent;
+    background-color: #e31e67;
     width: 35px;
     height: 35px;
     border-radius: 50%;
