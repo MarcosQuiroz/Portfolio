@@ -7,9 +7,7 @@
   font-family: "Teko", sans-serif;
   /*font-family: 'Karla', sans-serif;*/
 }
-body{
-  color: #fff;
-}
+
 .topbar {
   background: #1b1b1b;
   margin: 0;
@@ -145,6 +143,8 @@ body{
 a{
   color: #fff;
 }
+
+/* Resume */
 .resume {
   padding: 30px;
 }
