@@ -6,15 +6,21 @@
   box-sizing: border-box;
   font-family: "Teko", sans-serif;
 }
+
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #1c2a39;
-  color: ghostwhite;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1c2a39;
+    color: ghostwhite;
+    transition: all 1s ease-in-out; /* Transition for expansion effect */
+  }
+  
+  .expanded .loading-content {
+    transform: scale(1.2); /* Scale-up effect */
+  }
 
 .loading-content {
     text-align: center;
