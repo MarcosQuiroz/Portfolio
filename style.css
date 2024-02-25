@@ -7,10 +7,6 @@
   font-family: "Teko", sans-serif;
   /*font-family: 'Karla', sans-serif;*/
 }
-body {
-  scale: 10;
-  transition: scale 0.3s ease-in-out; 
-}
 .topbar {
   background: #1b1b1b;
   margin: 0;
@@ -29,7 +25,7 @@ body {
   background-position: center;
   background-size: cover;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out; 
+  transition: opacity 1s ease-in; 
 }
 .name{
   font-size: 28px;

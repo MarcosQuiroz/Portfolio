@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.querySelector('.container');
-    const body = document.body;
-
+  
     // Function to handle the fade-out effect and transition to the main page
     function fadeIn() {
         container.style.opacity = 1;
-        body.style.scale = 1; // Apply the scale transformation
     }
 
     fadeIn();
