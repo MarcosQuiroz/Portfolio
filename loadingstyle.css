@@ -15,10 +15,12 @@ body {
   margin: 0;
   background-color: #1c2a39;
   color: ghostwhite;
+  transition: scale 0.3s ease-in-out; 
 }
 
 .loading-content {
   text-align: center;
+  transition: opacity 0.3s ease-in-out; 
 }
 
 img {
@@ -32,3 +34,4 @@ p {
   bottom: 0;
   margin-bottom: 16px;
 }
+
