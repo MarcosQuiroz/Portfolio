@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
 
     // Set the duration of the loading time in milliseconds (e.g., 5000 for 5 seconds)
-    const loadingDuration = 1000;
+    const loadingDuration = 5000;
 
     // Function to handle the fade-out effect and transition to the main page
     function fadeOut() {

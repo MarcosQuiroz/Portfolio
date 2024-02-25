@@ -8,6 +8,7 @@
   /*font-family: 'Karla', sans-serif;*/
 }
 body {
+  scale: 10;
   transition: scale 0.3s ease-in-out; 
 }
 .topbar {
@@ -27,6 +28,7 @@ body {
   background-color: #1c2a39;
   background-position: center;
   background-size: cover;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out; 
 }
 .name{

@@ -2,16 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const container = document.querySelector('.container');
     const body = document.body;
 
-    // Set the duration of the loading time in milliseconds (e.g., 5000 for 5 seconds)
-    const loadingDuration = 1000;
-
     // Function to handle the fade-out effect and transition to the main page
-    function fadeOut() {
+    function fadeIn() {
         container.style.opacity = 1;
         body.style.scale = 1; // Apply the scale transformation
     }
 
-    setTimeout(fadeOut, loadingDuration);
+    fadeIn();
 
     var linkButtons = document.querySelectorAll('.LinkButton');
   
