@@ -25,7 +25,7 @@
   background-position: center;
   background-size: cover;
   opacity: 0;
-  transition: opacity 1s ease-in; 
+  transition: opacity 1s ease-in-out; 
 }
 .name{
   font-size: 28px;

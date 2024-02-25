@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.querySelector('.container');
-  
+
     // Function to handle the fade-out effect and transition to the main page
     function fadeIn() {
         container.style.opacity = 1;
     }
 
-    fadeIn();
+    setTimeout(fadeIn, 0.3);
+
 
     var linkButtons = document.querySelectorAll('.LinkButton');
   
