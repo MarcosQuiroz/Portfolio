@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
       links.style.opacity = 1;
   }
 
-  fadeInlinksAndName();
+  setTimeout(function() { fadeInlinksAndName(); }, 0);  
   setTimeout(function() { fadeInBar(); }, 1000);  
 
   var linkButtons = document.querySelectorAll('.LinkButton');
