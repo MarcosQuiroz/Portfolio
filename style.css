@@ -24,7 +24,6 @@
   background-color: #1c2a39;
   background-position: center;
   background-size: cover;
-  opacity: 0;
 }
 .name{
   font-size: 28px;
@@ -35,10 +34,14 @@
   font-weight: 1000;
   padding: 5vh;
   margin-right: auto;
+  opacity: 0;
+  transition: all 3s ease-out;
 }
 .linksBar{
     padding: 10%;
     margin-left: auto;
+    opacity: 0;
+    transition: all 3s ease-out;
 }
 .LinkButton{
   color: ghostwhite;
@@ -86,6 +89,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    opacity: 0;
   }
 
   .LinkButton {
@@ -127,7 +131,8 @@
   margin-left: 10%;
   border-radius: 15px;
   transform: translateX(-500px);
-  transition: all 0.3s ease-out; 
+  opacity: 0;
+  transition: all 1s ease-out;
 }
 .content {
   max-width: 600px;
