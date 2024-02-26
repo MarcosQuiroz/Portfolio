@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const loadingContent = document.querySelector('.loading-content');
-    const body = document.body;
+    const image = document.querySelector('img');
+    const text = document.querySelector('p');
 
     // Set the duration of the loading time in milliseconds (e.g., 5000 for 5 seconds)
     const loadingDuration = 5000;
 
     // Function to handle the fade-out effect and transition to the main page
     function fadeOut() {
-        loadingContent.style.opacity = 0;
-        body.style.scale = 10; // Apply the scale transformation
+        image.style.opacity = 0;
+        image.style.transform = 'translateX(500px)';
+
+        text.style.opacity = 0;
+        text.style.transform = 'translateX(500px)';
 
         // Wait for the transition to complete before redirecting
         setTimeout(function () {

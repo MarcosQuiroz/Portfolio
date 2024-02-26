@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,6 @@
 }
 
 body {
-  position: relative; /* Make body a positioned parent */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,28 +15,24 @@ body {
   margin: 0;
   background-color: #1c2a39;
   color: ghostwhite;
-  transition: scale 0.3s ease-in-out; 
 }
 
 .loading-content {
-  position: absolute; /* Position loading content relative to body */
-  top: 50%; /* Move top of loading content to 50% of body */
-  left: 50%; /* Move left of loading content to 50% of body */
-  transform: translate(-50%, -50%); /* Center loading content */
   text-align: center;
-  transition: opacity 0.3s ease-in-out; 
 }
 
 img {
   width: 100px;
   height: 100px;
-  margin-bottom: 16px;
+  margin-right: 16px;
+  transition: all 0.3s ease-in; 
 }
 
 p {
   position: absolute;
   bottom: 0;
   margin-bottom: 16px;
+  transition: all 0.3s ease-in; 
 }
 
 @media only screen and (max-width: 600px) {

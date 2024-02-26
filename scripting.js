@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const container = document.querySelector('.container');
 
-    // Function to handle the fade-out effect and transition to the main page
-    function fadeIn() {
-        container.style.opacity = 1;
-    }
+  const bar = document.querySelector('.bar');
+
+  function fadeIn() {
+        bar.style.opacity = 1;
+        bar.style.transform = 'translateX(500px)';
+  }
 
     setTimeout(fadeIn, 0.3);
 
