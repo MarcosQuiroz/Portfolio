@@ -18,7 +18,6 @@
     flex-direction: row;
   }
   .container{
-    max-width: 100%;
     width: 100%;
     height: 100%;
     /*background-image: url(images/Background.png);*/
@@ -65,7 +64,16 @@
       display: none;
     }
 
-  @media only screen and (max-width: 600px) and (orientation: landscape)  {
+    @media (orientation: portrait) {
+      .playfield { display: block; }
+      .overlay { display: none; }
+      }
+      @media (orientation: landscape) {
+      .playfield { display: none; }
+      .overlay { display: block; }
+      }
+
+  @media only screen and (orientation: portrait) and (orientation: landscape) {
     .topbar {
       flex-direction: column;
       align-items: flex-start;
