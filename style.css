@@ -1,157 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Teko", sans-serif;
-  /*font-family: 'Karla', sans-serif;*/
-}
-.topbar {
-  background: #1b1b1b;
-  margin: 0;
-  margin-top: 0%;
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-.container{
-  width: 100%;
-  height: 100%;
-  /*background-image: url(images/Background.png);*/
-  background-color: #1c2a39;
-  background-position: center;
-  background-size: cover;
-}
-.name{
-  font-size: 28px;
-  text-decoration: none;
-  background: linear-gradient(to right, #e31e67, purple);
-  background-clip: text;
-  color: transparent;
-  font-weight: 1000;
-  padding: 5vh;
-  margin-right: auto;
-  opacity: 0;
-  transition: all 3s ease-out;
-}
-.linksBar{
-    padding: 10%;
-    margin-left: auto;
-    opacity: 0;
-    transition: all 3s ease-out;
-}
-.LinkButton{
-  color: ghostwhite;
-  text-decoration: none;
-  padding: 4px 10px;
-  font-size: 15px;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.LinkButton:hover{
-  background: -webkit-linear-gradient(#e31e67, purple);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-  .LinkButton:active {
-    font-size: 20px;
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Teko", sans-serif;
+    /*font-family: 'Karla', sans-serif;*/
   }
-
-  .LinkButton img {
-    display: none;
-  }
-
-@media only screen and (max-width: 600px) {
   .topbar {
-    flex-direction: column;
-    align-items: flex-start;
+    background: #1b1b1b;
+    margin: 0;
+    margin-top: 0%;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
-
-  .name {
-    font-size: 25px;
+  .container{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    /*background-image: url(images/Background.png);*/
+    background-color: #1c2a39;
+    background-position: center;
+    background-size: cover;
+  }
+  .name{
+    font-size: 28px;
     text-decoration: none;
     background: linear-gradient(to right, #e31e67, purple);
     background-clip: text;
     color: transparent;
     font-weight: 1000;
-    padding: 0;
-    padding-left: 5vw;
+    padding: 5vh;
     margin-right: auto;
-  }
-
-  .linksBar {
-    padding: 0;
-    padding-left: 5vw;
-    margin: 0;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
     opacity: 0;
+    transition: all 3s ease-out;
   }
-
-  .LinkButton {
-    font-size: 0;
-    background-color: #e31e67;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 2vw;
+  .linksBar{
+      padding: 10%;
+      margin-left: auto;
+      opacity: 0;
+      transition: all 3s ease-out;
+  }
+  .LinkButton{
+    color: ghostwhite;
+    text-decoration: none;
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: bold;
     transition: 0.5s;
-    position: relative;
-    overflow: hidden;
+  }
+  .LinkButton:hover{
+    background: -webkit-linear-gradient(#e31e67, purple);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+    .LinkButton:active {
+      font-size: 20px;
+    }
+
+    .LinkButton img {
+      display: none;
+    }
+
+  @media only screen and (max-width: 600px) and (orientation: landscape)  {
+    .topbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .name {
+      font-size: 25px;
+      text-decoration: none;
+      background: linear-gradient(to right, #e31e67, purple);
+      background-clip: text;
+      color: transparent;
+      font-weight: 1000;
+      padding: 0;
+      padding-left: 5vw;
+      margin-right: auto;
+    }
+
+    .linksBar {
+      padding: 0;
+      padding-left: 5vw;
+      margin: 0;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      opacity: 0;
+    }
+
+    .LinkButton {
+      font-size: 0;
+      background-color: #e31e67;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 2vw;
+      transition: 0.5s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .LinkButton:hover, .LinkButton:active, .LinkButton:focus, .LinkButton:disabled {
+      background-color: -webkit-linear-gradient(purple, purple);
+      font-size: 0;
+    }
+    
+    .LinkButton img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .bar {
+    background-color: #1f2f3f;
+    /*background: radial-gradient(circle at bottom center, #e31e67 0%, #1f2f3f 30%);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 15px;
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .content {
+    max-width: 600px;
+    text-align: center;
+    color: ghostwhite;
+  }
+  .content h2{
+    font-size: 60px
+  }
+  .content p{
+    line-height: 40px;
+    color: #9ea1a5;
+    font-size: 20px;
+  }
+  a{
+    color: #fff;
   }
 
-  .LinkButton:hover, .LinkButton:active, .LinkButton:focus, .LinkButton:disabled {
-    background-color: -webkit-linear-gradient(purple, purple);
-    font-size: 0;
+  /* Resume */
+  .resume {
+    padding: 30px;
   }
-  
-  .LinkButton img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-.bar {
-  background-color: #1f2f3f;
-  /*background: radial-gradient(circle at bottom center, #e31e67 0%, #1f2f3f 30%);*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
-  border-radius: 15px;
-  transform: translateX(-500px);
-  opacity: 0;
-  transition: all 1s ease-out;
-}
-.content {
-  max-width: 600px;
-  text-align: center;
-  color: ghostwhite;
-}
-.content h2{
-  font-size: 60px
-}
-.content p{
-  line-height: 40px;
-  color: #9ea1a5;
-  font-size: 20px;
-}
-a{
-  color: #fff;
-}
-
-/* Resume */
-.resume {
-  padding: 30px;
-}
