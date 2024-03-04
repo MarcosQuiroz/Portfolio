@@ -20,8 +20,8 @@
 .container{
   width: 100%;
   height: 100%;
-  background-image: url(images/Background.png);
-  /*background-color: #1c2a39;*/
+  /*background-image: url(images/Background.png);*/
+  background-color: #1c2a39;
   background-position: center;
   background-size: cover;
 }

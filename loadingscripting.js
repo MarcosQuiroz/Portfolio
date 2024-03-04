@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const image = document.querySelector('img');
     const text = document.querySelector('p');
+    const skipText = document.querySelector('.skip-text');
 
     // Set the duration of the loading time in milliseconds (e.g., 5000 for 5 seconds)
     const loadingDuration = 5000;
@@ -29,8 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    document.addEventListener('touchstart', function () {
+    skipText.addEventListener('touchstart', function (event) {
         if (isMobileDevice()) {
+            event.stopPropagation();
             fadeOut();
         }
     });
@@ -40,10 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return window.innerWidth <= 600; // Adjust the threshold as needed
     }
 
-    const skipText = document.querySelector('.skip-text');
-
     if (isMobileDevice()) {
-        skipText.textContent = "Touch anywhere";
+        skipText.textContent = "Touch HERE to skip";
     } else {
         skipText.textContent = "Press 'ESC' to skip";
     }
