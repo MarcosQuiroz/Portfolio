@@ -48,14 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
        window.location.href = 'resume.html';
    }
 
-  window.addEventListener('popstate', function (event) {
-    if (event.state && event.state.isBack) {
+    window.addEventListener('popstate', function () {
       location.reload();
-    }
-  });
-
-  const currentState = history.state || {};
-  history.replaceState({ ...currentState, isBack: false }, '');
-  history.pushState({ ...currentState, isBack: true }, '');
-  
+    });
  });
