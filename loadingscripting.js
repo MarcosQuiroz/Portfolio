@@ -56,10 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadingScreen = document.querySelector(".loading-content");
 
   const spriteWidth = 160;
-  const totalFrames = 10;
   const animationSpeed = 50;
 
   let currentFrame = 0;
+  let totalFrames = 10;
   let verticalPosition = 0;
   let verticalVelocity = 0;
   const gravity = 2;
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (playerGroundPosition > 0) {
       spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
+      totalFrames = 10;
       verticalPosition = 0;
       verticalVelocity = 0;
       isGrounded = true;
@@ -95,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function jump() {
     if (isGrounded) {
       verticalVelocity = jumpStrength;
+      totalFrames = 6;
       currentFrame = 0
       spritesheet.style.backgroundImage = `url('images/Player_Jump.png')`;
     }
