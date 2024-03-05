@@ -126,6 +126,17 @@
       left: 0;
     }
   }
+
+  .main-video {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the video behind other content */
+  }
+
   .bar {
     background-color: #1f2f3f;
     /*background: radial-gradient(circle at bottom center, #e31e67 0%, #1f2f3f 30%);*/
