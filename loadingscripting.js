@@ -57,18 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const spriteWidth = 160;
   const animationSpeed = 50;
+  const gravity = 2;
+  const jumpStrength = -26;
 
   let currentFrame = 0;
   let totalFrames = 10;
   let verticalPosition = 0;
   let verticalVelocity = 0;
-  const gravity = 2;
-  const jumpStrength = -26;
-
   let isGrounded = false;
-  /*spritesheet.style.backgroundImage = `url('https://raw.githubusercontent.com/MarcosQuiroz/Portfolio/main/images/Player_Run.png')`;*/
+  let origin = 0 - spriteWidth / 2;
+
+   /*spritesheet.style.backgroundImage = `url('https://raw.githubusercontent.com/MarcosQuiroz/Portfolio/main/images/Player_Run.png')`;*/
   /*spritesheet.style.backgroundImage = `url('https://raw.githubusercontent.com/MarcosQuiroz/Portfolio/main/images/Player_Jump.png')`;*/
   spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
+  spritesheet.style.transform = `translateY(${origin}px)`;
 
   function animateSpritesheet() {
     const position = -currentFrame * spriteWidth;
@@ -82,10 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const playerGroundPosition = verticalPosition;
 
-    if (playerGroundPosition > 0) {
+    if (playerGroundPosition > origin) {
       spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
       totalFrames = 10;
-      verticalPosition = 0;
+      verticalPosition = origin;
       verticalVelocity = 0;
       isGrounded = true;
     } else {
@@ -106,6 +108,19 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("touchstart", jump);
 
   const animationInterval = setInterval(animateSpritesheet, animationSpeed);
+
+  const loadingText = document.querySelector(".loading-text");
+  const centerY = window.innerHeight / 2;
+  const textPosition = -centerY + 50; 
+  loadingText.style.transform = `translateY(${textPosition}px)`;
+  
+  const dots = ["", ".", "..", "..."];
+  let dotIndex = 0;
+  
+   setInterval(function () {
+    loadingText.textContent = "Fake Loading" + dots[dotIndex];
+    dotIndex = (dotIndex + 1) % dots.length;
+  }, 500);
 
   setTimeout(function () {
     clearInterval(animationInterval);

@@ -29,6 +29,11 @@ body {
   animation: animateSpritesheet 1s steps(10) infinite;
 }
 
+.loading-text {  
+  font-size: 25px;
+  color: white;
+}
+
 p {
   position: absolute;
   bottom: 0;
