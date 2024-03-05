@@ -48,12 +48,14 @@ document.addEventListener('DOMContentLoaded', function () {
        window.location.href = 'resume.html';
    }
 
-   window.addEventListener('beforeunload', function () {
-    const [entry] = performance.getEntriesByType('navigation');
-
-    if (entry && entry.type === 'back_forward') {
+  window.addEventListener('popstate', function (event) {
+    if (event.state && event.state.isBack) {
       location.reload();
     }
   });
+
+  const currentState = history.state || {};
+  history.replaceState({ ...currentState, isBack: false }, '');
+  history.pushState({ ...currentState, isBack: true }, '');
   
  });

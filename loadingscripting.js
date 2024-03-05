@@ -70,12 +70,14 @@ document.addEventListener('DOMContentLoaded', function () {
       loadingScreen.style.display = 'none';
     }, 60000);
 
-    window.addEventListener('beforeunload', function () {
-        const [entry] = performance.getEntriesByType('navigation');
-    
-        if (entry && entry.type === 'back_forward') {
+    window.addEventListener('popstate', function (event) {
+        if (event.state && event.state.isBack) {
           location.reload();
         }
       });
+    
+      const currentState = history.state || {};
+      history.replaceState({ ...currentState, isBack: false }, '');
+      history.pushState({ ...currentState, isBack: true }, '');
   });
   
