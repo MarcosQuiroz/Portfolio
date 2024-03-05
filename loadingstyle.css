@@ -24,7 +24,7 @@ body {
 .character-spritesheet {
   width: 100px;
   height: 100px;
-  background: url('images/Player_Run.png') no-repeat;
+  background-repeat: no-repeat;
   animation: animateSpritesheet 1s steps(10) infinite;
 }
   
