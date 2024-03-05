@@ -22,8 +22,8 @@ body {
 }
 
 .character-spritesheet {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-repeat: no-repeat;
   animation: animateSpritesheet 1s steps(10) infinite;
 }
