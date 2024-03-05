@@ -54,25 +54,43 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     const loadingScreen = document.querySelector('.loading-content');
-  
+
     const spriteWidth = 80;
+    const spriteHeight = 80;
     const totalFrames = 10;
     const animationSpeed = 50;
-  
+
     let currentFrame = 0;
-  
-    function animateSpritesheet() {
-      const position = -currentFrame * spriteWidth;
-      spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
-      spritesheet.style.backgroundPosition = `${position}px 0`;
-  
-      currentFrame = (currentFrame + 1) % totalFrames;
-  
-      if (currentFrame === 0) {
-        // Reset background position at the end of the animation
-        spritesheet.style.backgroundPosition = '0 0';
-      }
+    let verticalPosition = 0;
+    let verticalVelocity = 0;
+    const gravity = 1.0;
+    const jumpStrength = -10.0; 
+
+  function animateSpritesheet() {
+    const position = -currentFrame * spriteWidth;
+    spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
+    spritesheet.style.backgroundPosition = `${position}px ${verticalPosition}px`;
+
+    currentFrame = (currentFrame + 1) % totalFrames;
+
+    verticalVelocity += gravity;
+    verticalPosition += verticalVelocity;
+    const groundLevel = 0 + spriteHeight / 2;
+
+    if (verticalPosition > groundLevel) {
+      verticalPosition = groundLevel;
+      verticalVelocity = 0;
     }
+  }
+
+  function jump() {
+    const groundLevel = 0 + spriteHeight / 2;
+    if (verticalPosition === groundLevel) {
+      verticalVelocity = jumpStrength; 
+    }
+
+    document.addEventListener('click', jump);
+    document.addEventListener('touchstart', jump);
   
     const animationInterval = setInterval(animateSpritesheet, animationSpeed);
   
