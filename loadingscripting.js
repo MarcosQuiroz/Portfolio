@@ -5,16 +5,27 @@ document.addEventListener('DOMContentLoaded', function () {
   
     const loadingDuration = 60000;
 
+    function resetStyles() {
+        spritesheet.style.opacity = 1;
+        spritesheet.style.transform = 'translateX(0)';
+        text.style.opacity = 1;
+        text.style.transform = 'translateX(0)';
+      }
+  
     function fadeOut() {
       spritesheet.style.opacity = 0;
       spritesheet.style.transform = 'translateX(500px)';
   
       text.style.opacity = 0;
       text.style.transform = 'translateX(500px)';
-  
+
       setTimeout(function () {
         window.location.href = 'main.html';
       }, 1000);
+  
+      setTimeout(function () {
+        resetStyles();
+      }, 1100);
     }
   
     setTimeout(fadeOut, loadingDuration);
@@ -69,9 +80,5 @@ document.addEventListener('DOMContentLoaded', function () {
       clearInterval(animationInterval);
       loadingScreen.style.display = 'none';
     }, 60000);
-
-    window.addEventListener('popstate', function () {
-        location.reload();
-      });
   });
   
