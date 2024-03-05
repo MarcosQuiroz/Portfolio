@@ -47,4 +47,13 @@ document.addEventListener('DOMContentLoaded', function () {
    } else {
        window.location.href = 'resume.html';
    }
+
+   window.addEventListener('beforeunload', function () {
+    const [entry] = performance.getEntriesByType('navigation');
+
+    if (entry && entry.type === 'back_forward') {
+      location.reload();
+    }
+  });
+  
  });

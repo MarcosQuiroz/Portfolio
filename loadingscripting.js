@@ -5,13 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
     const loadingDuration = 60000;
 
-    function resetStyles() {
-        spritesheet.style.opacity = 1;
-        spritesheet.style.transform = 'translateX(0)';
-        text.style.opacity = 1;
-        text.style.transform = 'translateX(0)';
-      }
-  
     function fadeOut() {
       spritesheet.style.opacity = 0;
       spritesheet.style.transform = 'translateX(500px)';
@@ -20,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
       text.style.transform = 'translateX(500px)';
   
       setTimeout(function () {
-        resetStyles();
         window.location.href = 'main.html';
       }, 1000);
     }
@@ -77,5 +69,13 @@ document.addEventListener('DOMContentLoaded', function () {
       clearInterval(animationInterval);
       loadingScreen.style.display = 'none';
     }, 60000);
+
+    window.addEventListener('beforeunload', function () {
+        const [entry] = performance.getEntriesByType('navigation');
+    
+        if (entry && entry.type === 'back_forward') {
+          location.reload();
+        }
+      });
   });
   
