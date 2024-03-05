@@ -1,27 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const image = document.querySelector('img');
-    const text = document.querySelector('p');
-    const skipText = document.querySelector('.skip-text');
-
-    // Set the duration of the loading time in milliseconds (e.g., 5000 for 5 seconds)
-    const loadingDuration = 5000;
-
-    // Function to handle the fade-out effect and transition to the main page
-    function fadeOut() {
-        image.style.opacity = 0;
-        image.style.transform = 'translateX(500px)';
-
-        text.style.opacity = 0;
-        text.style.transform = 'translateX(500px)';
-
-        // Wait for the transition to complete before redirecting
-        setTimeout(function () {
-            window.location.href = 'main.html'; // Replace 'main.html' with your main page
-        }, 1000); // Adjust the time according to your transition duration
+    const loadingScreen = document.getElementById('.loading-content');
+    const spritesheet = document.getElementById('.character-spritesheet');
+  
+    const spriteWidth = 80;
+    const totalFrames = 10;
+    const animationSpeed = 100;
+  
+    let currentFrame = 0;
+  
+    function updateSpritesheet() {
+      const position = -currentFrame * spriteWidth;
+      spritesheet.style.backgroundPosition = `${position}px 0`;
     }
+  
+    function animateSpritesheet() {
+      currentFrame = (currentFrame + 1) % totalFrames;
+      updateSpritesheet();
+    }
+  
+    const animationInterval = setInterval(animateSpritesheet, animationSpeed);
+  
+    setTimeout(function () {
+      clearInterval(animationInterval);
+      loadingScreen.style.display = 'none';
+    }, 60000);
 
-    // Set a timeout to trigger the fade-out effect after the loading duration
-    setTimeout(fadeOut, loadingDuration);
+    const skipText = document.querySelector('.skip-text');
 
     // Allow users to skip the loading by pressing 'ESC'
     document.addEventListener('keydown', function (event) {
@@ -47,4 +51,5 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         skipText.textContent = "Press 'ESC' to skip";
     }
+
 });

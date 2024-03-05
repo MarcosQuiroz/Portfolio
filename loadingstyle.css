@@ -21,11 +21,10 @@ body {
   text-align: center;
 }
 
-img {
+.character-spritesheet {
   width: 100px;
   height: 100px;
-  margin-right: 16px;
-  transition: all 0.3s ease-in; 
+  background: url('images/Player_Run.png') no-repeat;
 }
 
 p {
