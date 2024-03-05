@@ -131,7 +131,7 @@ position: relative;
 }
 
 .main-video {
-margin-top: 30vh;
+margin-top: 5vh;
 width: 100%;
 height: auto;
 object-fit: cover;
@@ -147,7 +147,7 @@ justify-content: center;
 width: 80%;
 margin-left: 10%;
 border-radius: 15px;
-margin-top: 30vh;
+margin-top: 5vh;
 transform: translateX(-500px);
 opacity: 0;
 transition: all 1s ease-out;
