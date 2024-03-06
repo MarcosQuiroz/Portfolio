@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function createObstacles() {
     document.getElementById("gameObjectsContainer").innerHTML = '';
-h
+
     const screenWidth = window.innerWidth;
     const obstacleCount = screenWidth < 600 ? 1 : 3;
 
