@@ -99,10 +99,10 @@ document.addEventListener("DOMContentLoaded", function () {
     verticalVelocity += gravity;
     verticalPosition += verticalVelocity;
 
-    if (verticalPosition > -spriteWidth / 2) {
+    if (verticalPosition > 0) {
       spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
       totalFrames = 10;
-      verticalPosition = -spriteWidth / 2;
+      verticalPosition = 0;
       verticalVelocity = 0;
       isGrounded = true;
     } else {
