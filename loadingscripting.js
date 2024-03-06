@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  let horizontalVelocity = -5;
+  let horizontalVelocity = -3.5;
   let obstacles;
 
   function createObstacles() {
