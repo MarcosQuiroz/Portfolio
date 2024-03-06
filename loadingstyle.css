@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +31,12 @@ body {
   color: white;
 }
 
+.game-objects {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: row;
+}
+
 .character-spritesheet {
   width: 160px;
   height: 160px;
@@ -39,13 +45,11 @@ body {
   animation: animateSpritesheet 1s steps(10) infinite;
 }
 
-.game-objects{
-  margin-top: 25vh;
-  display: flex;
-  flex-direction: row;
+.obstacle {
+  position: absolute;
 }
 
-.loading-text {  
+.loading-text {
   text-align: center;
   font-size: 20px;
   color: white;
@@ -58,15 +62,10 @@ body {
 }
 
 .skip-text {
-  margin-top: 20vh;
+  margin-top: 10vh;
   text-align: center;
   font-size: 16px;
-  transition: all 0.3s ease-in; 
-}
-
-p{
-  padding-right: 12.5vw;
-  padding-left: 12.5vw;
+  transition: all 0.3s ease-in;
 }
 
 @media only screen and (max-width: 600px) {
