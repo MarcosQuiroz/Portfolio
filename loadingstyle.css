@@ -40,13 +40,13 @@ body {
 }
 
 .game-objects{
-  margin-top: 30vh;
+  margin-top: 15vh;
   display: flex;
   flex-direction: row;
 }
 
 .loading-text {  
-  margin-top: -20vh;
+  margin-top: -10vh;
   text-align: center;
   font-size: 20px;
   color: white;
@@ -59,7 +59,7 @@ body {
 }
 
 .skip-text {
-  margin-top: 10vh;
+  margin-top: 30vh;
   text-align: center;
   font-size: 16px;
   transition: all 0.3s ease-in; 
