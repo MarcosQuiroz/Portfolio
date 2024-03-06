@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadingText = document.querySelector(".loading-text");
   const instructions = document.querySelector(".instructions");
   const skipText = document.querySelector(".skip-text");
-  const obstacles = document.querySelectorAll(".obstacle");
 
   const loadingDuration = 60000;
 
@@ -131,28 +130,56 @@ document.addEventListener("DOMContentLoaded", function () {
       countdownTimer--;
     }
   }
+
   let horizontalVelocity = -5;
+  let obstacles;
+
+  function createObstacles() {
+    document.getElementById("gameObjectsContainer").innerHTML = '';
+h
+    const screenWidth = window.innerWidth;
+    const obstacleCount = screenWidth < 600 ? 1 : 3;
+
+    for (let i = 0; i < obstacleCount; i++) {
+      const obstacle = document.createElement('div');
+      obstacle.className = 'obstacle';
+      obstacle.textContent = 'Test Obstacle';
+      document.getElementById("gameObjectsContainer").appendChild(obstacle);
+    }
+
+    updateObstaclePositions();
+  }
+
+  function updateObstaclePositions() {
+    obstacles = document.querySelectorAll(".obstacle");
+
+    obstacles.forEach((obstacle, index) => {
+      obstacle.style.left = (index * (window.innerWidth / obstacles.length)) + "px";
+    });
+  }
 
   function moveObstacle(obstacle) {
     let currentLeft = parseFloat(getComputedStyle(obstacle).left) || 0;
+    let obstacleWidth = obstacle.offsetWidth;
 
     obstacle.style.left = currentLeft + horizontalVelocity + "px";
 
-    if (currentLeft + obstacle.offsetWidth < 0) {
-      obstacle.style.left = window.innerWidth - obstacle.offsetWidth + "px";
+    if (currentLeft + obstacleWidth < 0) {
+      obstacle.style.left = window.innerWidth - obstacleWidth + "px";
     }
   }
 
   function moveObstacles() {
-    obstacles.forEach((obstacle) => moveObstacle(obstacle));
+    obstacles.forEach(obstacle => moveObstacle(obstacle));
     requestAnimationFrame(moveObstacles);
   }
 
-  obstacles.forEach((obstacle, index) => {
-    obstacle.style.left = index * (window.innerWidth / obstacles.length) + "px";
-  });
-
+  createObstacles();
   moveObstacles();
+
+  window.addEventListener('resize', function() {
+    createObstacles();
+  });
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
