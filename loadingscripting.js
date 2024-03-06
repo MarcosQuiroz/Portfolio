@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     obstacle.style.left = currentLeft + horizontalVelocity + "px";
 
     if (currentLeft + obstacle.offsetWidth < 0) {
-      obstacle.style.left = window.innerWidth + "px";
+      obstacle.style.left = window.innerWidth - obstacle.offsetWidth + "px";
     }
   }
 
