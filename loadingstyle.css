@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,6 @@
 
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
@@ -17,11 +16,15 @@ body {
   color: ghostwhite;
 }
 
-.loading-content {
+.countdown-text {
+  margin-top: 10vh;
   text-align: center;
+  font-size: 35px;
+  color: white;
 }
 
 .character-spritesheet {
+  margin-top: 40vh;
   width: 160px;
   height: 160px;
   background-repeat: no-repeat;
@@ -30,19 +33,29 @@ body {
 }
 
 .loading-text {  
-  font-size: 25px;
+   margin-top: -20vh;
+  text-align: center;
+  font-size: 20px;
   color: white;
 }
 
-p {
-  position: absolute;
+.instructions {
+  text-align: center;
   bottom: 0;
   margin-bottom: 16px;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; 
+}
+  
+.skip-text {
+  margin-top: 15vh;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 16px;
+  transition: all 0.3s ease-in; 
 }
 
 @media only screen and (max-width: 600px) {
-  .loading-content {
-    top: 40%; /* Adjust as needed for vertical centering on smaller screens */
-  }
+    .loading-screen {
+      top: 40%; /* Adjust as needed for vertical centering on smaller screens */
+    }
 }

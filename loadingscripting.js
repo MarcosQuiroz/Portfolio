@@ -1,23 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const countdownText = document.querySelector(".countdown-text");
   const spritesheet = document.querySelector(".character-spritesheet");
-  const text = document.querySelector("p");
+  const loadingText = document.querySelector(".loading-text");  
+  const instructions = document.querySelector(".instructions");
   const skipText = document.querySelector(".skip-text");
+
 
   const loadingDuration = 60000;
 
   function resetStyles() {
     spritesheet.style.opacity = 1;
     spritesheet.style.transform = "translateX(0)";
-    text.style.opacity = 1;
-    text.style.transform = "translateX(0)";
+    countdownText.style.opacity = 1;
+    countdownText.style.transform = "translateX(0)";
+    loadingText.style.opacity = 1;
+    loadingText.style.transform = "translateX(0)";
+    instructions.style.opacity = 1;
+    instructions.style.transform = "translateX(0)";
+    skipText.style.opacity = 1;
+    skipText.style.transform = "translateX(0)";
   }
 
   function fadeOut() {
     spritesheet.style.opacity = 0;
     spritesheet.style.transform = "translateX(500px)";
 
-    text.style.opacity = 0;
-    text.style.transform = "translateX(500px)";
+    countdownText.style.opacity = 0;
+    countdownText.style.transform = "translateX(500px)";
+    loadingText.style.opacity = 0;
+    loadingText.style.transform = "translateX(500px)";
+    instructions.style.opacity = 0;
+    instructions.style.transform = "translateX(500px)";
+    skipText.style.opacity = 0;
+    skipText.style.transform = "translateX(500px)";
 
     setTimeout(function () {
       window.location.href = "main.html";
@@ -49,11 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (isMobileDevice()) {
     skipText.textContent = "Touch HERE to skip";
+    instructions.textContent = "Touch Anywhere On The Screen To Jump"
+
   } else {
     skipText.textContent = "Press 'ESC' to skip";
+    instructions.textContent = "Click Anywhere On The Screen To Jump"
   }
 
-  const loadingScreen = document.querySelector(".loading-content");
+  const loadingScreen = document.querySelector(".loading-screen");
 
   const spriteWidth = 160;
   const animationSpeed = 50;
@@ -65,12 +83,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let verticalPosition = 0;
   let verticalVelocity = 0;
   let isGrounded = false;
-  let origin = 0 - spriteWidth / 2;
-
+  
    /*spritesheet.style.backgroundImage = `url('https://raw.githubusercontent.com/MarcosQuiroz/Portfolio/main/images/Player_Run.png')`;*/
   /*spritesheet.style.backgroundImage = `url('https://raw.githubusercontent.com/MarcosQuiroz/Portfolio/main/images/Player_Jump.png')`;*/
   spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
-  spritesheet.style.transform = `translateY(${origin}px)`;
+
 
   function animateSpritesheet() {
     const position = -currentFrame * spriteWidth;
@@ -82,12 +99,10 @@ document.addEventListener("DOMContentLoaded", function () {
     verticalVelocity += gravity;
     verticalPosition += verticalVelocity;
 
-    const playerGroundPosition = verticalPosition;
-
-    if (playerGroundPosition > origin) {
+    if (verticalPosition > -spriteWidth / 2) {
       spritesheet.style.backgroundImage = `url('images/Player_Run.png')`;
       totalFrames = 10;
-      verticalPosition = origin;
+      verticalPosition = -spriteWidth / 2;
       verticalVelocity = 0;
       isGrounded = true;
     } else {
@@ -108,11 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("touchstart", jump);
 
   const animationInterval = setInterval(animateSpritesheet, animationSpeed);
-
-  const loadingText = document.querySelector(".loading-text");
-  const centerY = window.innerHeight / 2;
-  const textPosition = -centerY + 50; 
-  loadingText.style.transform = `translateY(${textPosition}px)`;
   
   const dots = ["", ".", "..", "..."];
   let dotIndex = 0;
@@ -121,9 +131,22 @@ document.addEventListener("DOMContentLoaded", function () {
     loadingText.textContent = "Fake Loading" + dots[dotIndex];
     dotIndex = (dotIndex + 1) % dots.length;
   }, 500);
+  
+  const countdownDuration = loadingDuration / 1000;
+  let countdownTimer = countdownDuration;
 
+  function updateCountdown() {
+    countdownText.textContent = countdownTimer;
+
+    if (countdownTimer > 0) {
+      countdownTimer--;
+    }
+  }
+  
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+  
   setTimeout(function () {
     clearInterval(animationInterval);
-    loadingScreen.style.display = "none";
-  }, 60000);
+  }, loadingDuration);
 });
