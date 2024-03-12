@@ -131,7 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+<<<<<<< HEAD
   let horizontalVelocity = -5;
+=======
+  let horizontalVelocity = -3.5;
+>>>>>>> parent of a947436 (Remove loading screen and update resume)
   let obstacles;
 
   function createObstacles() {
