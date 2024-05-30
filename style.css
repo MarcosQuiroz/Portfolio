@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
-.container{
+.container {
   width: 100%;
   height: 100%;
   /*background-image: url(images/Background.png);*/
@@ -31,7 +31,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.name{
+.name {
   font-size: 28px;
   text-decoration: none;
   background: linear-gradient(to right, #e31e67, purple);
@@ -43,13 +43,13 @@ body {
   opacity: 0;
   transition: all 3s ease-out;
 }
-.linksBar{
-    padding: 10%;
-    margin-left: auto;
-    opacity: 0;
-    transition: all 3s ease-out;
+.linksBar {
+  padding: 10%;
+  margin-left: auto;
+  opacity: 0;
+  transition: all 3s ease-out;
 }
-.LinkButton{
+.LinkButton {
   color: ghostwhite;
   text-decoration: none;
   padding: 4px 10px;
@@ -57,19 +57,19 @@ body {
   font-weight: bold;
   transition: 0.5s;
 }
-.LinkButton:hover{
+.LinkButton:hover {
   background: -webkit-linear-gradient(#e31e67, purple);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-  .LinkButton:active {
-    font-size: 20px;
-  }
+.LinkButton:active {
+  font-size: 20px;
+}
 
-  .LinkButton img {
-    display: none;
-  }
-  
+.LinkButton img {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .topbar {
     flex-direction: column;
@@ -111,11 +111,14 @@ body {
     overflow: hidden;
   }
 
-  .LinkButton:hover, .LinkButton:active, .LinkButton:focus, .LinkButton:disabled {
+  .LinkButton:hover,
+  .LinkButton:active,
+  .LinkButton:focus,
+  .LinkButton:disabled {
     background-color: -webkit-linear-gradient(purple, purple);
     font-size: 0;
   }
-  
+
   .LinkButton img {
     display: block;
     height: 100%;
@@ -134,47 +137,48 @@ body {
 
   .portfolio-image {
     width: 100%;
+  }
 }
 .main_content {
-position: relative;
+  position: relative;
 }
 
 .main-video {
-margin-top: 5vh;
-width: 100%;
-height: auto;
-object-fit: cover;
-opacity: 0;
-transition: all 3s ease-out;
+  margin-top: 5vh;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 3s ease-out;
 }
 
 .bar {
-background-color: #1f2f3f;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 80%;
-margin-left: 10%;
-border-radius: 15px;
-margin-top: 5vh;
-transform: translateX(-500px);
-opacity: 0;
-transition: all 1s ease-out;
+  background-color: #1f2f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 15px;
+  margin-top: 5vh;
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: all 1s ease-out;
 }
 .content {
   max-width: 600px;
   text-align: center;
   color: ghostwhite;
 }
-.content h2{
-  font-size: 60px
+.content h2 {
+  font-size: 60px;
 }
-.content p{
+.content p {
   line-height: 40px;
   color: #9ea1a5;
   font-size: 20px;
 }
-a{
+a {
   color: #fff;
 }
 
