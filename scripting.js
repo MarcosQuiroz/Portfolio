@@ -38,18 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("touchend", function () {
       button.classList.remove("active"); // Remove the class when touch ends
     });
-
-    const portfolioImages = document.querySelectorAll(".portfolio-image img");
-
-    let currentIndex = 0;
-    const intervalDuration = 1000;
-
-    function showNextImage() {
-      portfolioImages[currentIndex].classList.remove("active");
-      currentIndex = (currentIndex + 1) % portfolioImages.length;
-      portfolioImages[currentIndex].classList.add("active");
-    }
-    const slideshowInterval = setInterval(showNextImage, intervalDuration);
   });
 });
 
@@ -71,3 +59,20 @@ document
       location.reload();
     });
   });
+
+// Get all portfolio images
+const portfolioImages = document.querySelectorAll(".portfolio-image img");
+
+// Set initial index and interval duration
+let currentIndex = 0;
+const intervalDuration = 3000; // 3 seconds
+
+// Function to show next image
+function showNextImage() {
+  portfolioImages[currentIndex].classList.remove("active");
+  currentIndex = (currentIndex + 1) % portfolioImages.length;
+  portfolioImages[currentIndex].classList.add("active");
+}
+
+// Set interval to change images
+const slideshowInterval = setInterval(showNextImage, intervalDuration);
