@@ -38,6 +38,18 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("touchend", function () {
       button.classList.remove("active"); // Remove the class when touch ends
     });
+
+    const portfolioImages = document.querySelectorAll(".portfolio-image img");
+
+    let currentIndex = 0;
+    const intervalDuration = 1000;
+
+    function showNextImage() {
+      portfolioImages[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % portfolioImages.length;
+      portfolioImages[currentIndex].classList.add("active");
+    }
+    const slideshowInterval = setInterval(showNextImage, intervalDuration);
   });
 });
 

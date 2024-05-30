@@ -213,25 +213,39 @@ a {
 
 .portfolio-image {
   width: 30%;
-  object-fit: cover;
+  height: auto;
+  position: relative;
 }
 
-.portfolio-item.left .portfolio-info {
+.portfolio-image img {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.portfolio-item.right .portfolio-info {
+.portfolio-image img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.portfolio-info {
   position: absolute;
   top: 0;
   left: 0;
   padding: 20px;
+  color: linear-gradient(to right, #e31e67, purple);
+}
+
+.portfolio-item.left .portfolio-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
   text-align: right;
 }
 
-.portfolio-info h3 {
+.portfolio-item.right .portfolio-info h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
