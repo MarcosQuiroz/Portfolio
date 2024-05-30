@@ -40,8 +40,10 @@
         </div>
       </div>
       <div class="main_content">
-        <iframe src="https://olafwempe.com/mp3/silence/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-        <video class="main-video" id="mainVideo" autoplay muted loop playsinline preload="metadata">
+        <audio id="backgroundAudio" autoplay loop>
+          <source src="videos/MainVideoMusic.mp3" type="audio/mp3">
+        </audio>
+        <video class="main-video" autoplay muted loop playsinline>
           <source src="videos/MainVideo.mp4" type="video/mp4" />
         </video>
         <div class="bar">
