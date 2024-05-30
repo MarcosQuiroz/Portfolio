@@ -125,6 +125,15 @@ body {
     top: 0;
     left: 0;
   }
+
+  .portfolio-item {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .portfolio-image {
+    width: 100%;
 }
 .main_content {
 position: relative;
@@ -172,4 +181,50 @@ a{
 /* Resume */
 .resume {
   padding: 30px;
+}
+
+.portfolio {
+  margin-top: 5vh;
+}
+
+.portfolio-item {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  background-color: #1f2f3f;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 5vh;
+  transition: all 0.5s ease-out;
+}
+
+.portfolio-item.left {
+  flex-direction: row;
+}
+
+.portfolio-item.right {
+  flex-direction: row-reverse;
+}
+
+.portfolio-image {
+  width: 30%;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 20px;
+  color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.portfolio-info p {
+  font-size: 16px;
+  color: #9ea1a5;
 }

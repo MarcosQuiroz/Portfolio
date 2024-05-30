@@ -1,48 +1,87 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Marcos Quiroz Moreno</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <div class="topbar">
-      <div class="name">
-        Marcos Quiroz Moreno
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marcos Quiroz Moreno</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="name">Marcos Quiroz Moreno</div>
+        <div class="linksBar">
+          <a
+            href="https://www.linkedin.com/in/marcos-quiroz-moreno-7715b4234/"
+            class="LinkButton"
+            target="_blank"
+          >
+            LinkedIn
+            <img src="images/Linkedin.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://github.com/MarcosQuiroz"
+            class="LinkButton"
+            target="_blank"
+          >
+            GitHub
+            <img src="images/Github.png" alt="GitHub" />
+          </a>
+          <a href="#" class="LinkButton" id="resumeLink">
+            Resume
+            <img src="images/Resume.png" alt="Resume" />
+          </a>
+          <a
+            href="documents/Resume.pdf"
+            download="Resume.pdf"
+            id="mobileDownloadLink"
+            style="display: none"
+          ></a>
+        </div>
       </div>
-      <div class="linksBar">
-        <a href="https://www.linkedin.com/in/marcos-quiroz-moreno-7715b4234/" class="LinkButton" target="_blank"> LinkedIn
-          <img src="images/Linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/MarcosQuiroz" class="LinkButton" target="_blank"> GitHub
-          <img src="images/Github.png" alt="GitHub">
-        </a>
-        <a href="#" class="LinkButton" id="resumeLink"> Resume
-          <img src="images/Resume.png" alt="Resume">
-        </a>
-        <a href="documents/Resume.pdf" download="Resume.pdf" id="mobileDownloadLink" style="display: none;"></a>
+      <div class="main_content">
+        <video class="main-video" autoplay muted loop playsinline>
+          <source src="videos/MainVideo.mp4" type="video/mp4" />
+        </video>
+        <div class="bar">
+          <div class="content">
+            <h2>About Me</h2>
+            <p>
+              Game programming student at George Brown College. Originally from
+              Mexico, I am currently residing in Toronto, Canada. My skill set
+              includes proficiency in programming languages such as C++, C#. And
+              experience in game development platforms like Unity and Unreal
+              Engine 5. I am seeking new opportunities to contribute to the
+              dynamic field of game development. Explore below for a showcase of
+              my most notable projects completed during my time at college.
+            </p>
+          </div>
+        </div>
+        <div class="portfolio">
+          <div class="portfolio-item left">
+            <img src="images/Resume.png" alt="Game 1" class="portfolio-image" />
+            <div class="portfolio-info">
+              <h3>Game Title 1</h3>
+              <p>Description of Game 1. This game features...</p>
+            </div>
+          </div>
+          <div class="portfolio-item right">
+            <img src="images/Resume.png" alt="Game 2" class="portfolio-image" />
+            <div class="portfolio-info">
+              <h3>Game Title 2</h3>
+              <p>Description of Game 2. This game features...</p>
+            </div>
+          </div>
+          <div class="portfolio-item left">
+            <img src="images/Resume.png" alt="Game 3" class="portfolio-image" />
+            <div class="portfolio-info">
+              <h3>Game Title 3</h3>
+              <p>Description of Game 3. This game features...</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <script src="scripting.js"></script>
     </div>
- <div class="main_content">
-  <video class="main-video" autoplay muted loop playsinline>
-    <source src="videos/MainVideo.mp4" type="video/mp4">
-  </video>
-    <div class="bar">
-      <div class="content">
-        <h2>About Me</h2>
-        <p>Game programming student at George Brown College. 
-          Originally from Mexico, I am currently residing in Toronto, Canada.
-          My skill set includes proficiency in programming languages such as C++, C#.
-          And experience in game development platforms like Unity and Unreal Engine 5.
-          I am seeking new opportunities to contribute to the dynamic field of game development.
-          Explore below for a showcase of my most notable projects completed during my time at college.
-        </p>
-      </div>
-    </div>
-    </div>
-    <script src="scripting.js"></script>
-  </div>
-</body>
+  </body>
 </html>
