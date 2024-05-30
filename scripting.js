@@ -28,9 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeInBar();
   }, 2000);
 
+  const music = document.getElementById('mainMusic');
   const video = document.getElementById('mainVideo');
-  video.addEventListener('play', function() {
-    video.muted = false;
+  $(video).on("click", function(e){
+    music.muted = !music.muted;
   });
 
   var linkButtons = document.querySelectorAll(".LinkButton");
