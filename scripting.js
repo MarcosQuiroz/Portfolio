@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const mainVideo = document.querySelector(".main-video");
-
+  
   setTimeout(() => {
-    mainVideo.style.transition = "height 2s ease";
-  }, 5000);
+    mainVideo.style.height = "75%";
+  }, 3000);
   setTimeout(function () {
     fadeInlinksAndNameBar();
-  }, 5000);
+  }, 3000);
   setTimeout(function () {
     fadeInMainVideo();
   }, 1000);

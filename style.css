@@ -193,8 +193,7 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  opacity: 1;
-  transition: all 3s ease-out;
+  transition: height 2s ease;
 }
 
 .bar {
@@ -206,8 +205,6 @@ body {
   margin-left: 10%;
   border-radius: 15px;
   margin-top: 5vh;
-  transform: translateX(-500px);
-  opacity: 0;
   transition: all 1s ease-out;
 }
 
