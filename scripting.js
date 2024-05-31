@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }*/
 
   function fadeInlinksAndNameBar() {
-    const topbar = document.querySelector("..topbar");
+    const topbar = document.querySelector(".topbar");
     topbar.style.opacity = 1;
   }
 
