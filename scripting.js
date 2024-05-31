@@ -87,3 +87,14 @@ portfolioItems.forEach((item) => {
       item.style.borderColor = '#9ea1a5'; // Revert frame color
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the main video element
+    const mainVideo = document.querySelector(".main-video");
+  
+    // Function to reduce the height of the main video after 5 seconds
+    setTimeout(() => {
+      mainVideo.style.height = "75%";
+      mainVideo.style.transition = "height 2s ease";
+    }, 5000);
+  });
