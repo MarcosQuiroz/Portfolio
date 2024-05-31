@@ -9,22 +9,19 @@ document.addEventListener("DOMContentLoaded", function () {
     bar.style.opacity = 1;
     bar.style.transform = "translateX(0px)";
   }*/
-
-  function fadeInlinksAndNameBar() {
-    const topbar = document.querySelector(".topbar");
-    topbar.style.opacity = 1;
-  }
-
-  function resizeVideoHeight() {
+  function videoDisplayTransitionsHandler() {
     const mainVideo = document.querySelector(".main-video");
     mainVideo.style.height = "75%";
+
+    const topbar = document.querySelector(".topbar");
+    topbar.style.opacity = 1;
+
+    const youtubeLink = document.querySelector(".youtube-link");
+    youtubeLink.style.opacity = 1;
   }
 
   setTimeout(() => {
-    resizeVideoHeight();
-  }, 3000);
-  setTimeout(function () {
-    fadeInlinksAndNameBar();
+    videoDisplayTransitionsHandler();
   }, 3000);
   /*setTimeout(function () {
     fadeInMainVideo();
