@@ -60,19 +60,18 @@ document
     });
   });
 
-// Get all portfolio images
-const portfolioImages = document.querySelectorAll(".portfolio-image img");
+const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-// Set initial index and interval duration
-let currentIndex = 0;
-const intervalDuration = 3000; // 3 seconds
+portfolioItems.forEach((item) => {
+  const images = item.querySelectorAll(".portfolio-image img");
+  let currentIndex = 0;
 
-// Function to show next image
-function showNextImage() {
-  portfolioImages[currentIndex].classList.remove("active");
-  currentIndex = (currentIndex + 1) % portfolioImages.length;
-  portfolioImages[currentIndex].classList.add("active");
-}
+  function showNextImage() {
+    images[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add("active");
+  }
 
-// Set interval to change images
-const slideshowInterval = setInterval(showNextImage, intervalDuration);
+  images[currentIndex].classList.add("active"); // Initially show the first image
+  setInterval(showNextImage, 1000); // Change image every 1 second
+});
