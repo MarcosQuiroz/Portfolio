@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function fadeInMainVideo() {
+/*  function fadeInMainVideo() {
     const main_video = document.querySelector(".main-video");
     main_video.style.opacity = 1;
   }
@@ -8,19 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const bar = document.querySelector(".bar");
     bar.style.opacity = 1;
     bar.style.transform = "translateX(0px)";
+  }*/
+
+  function fadeInlinksAndNameBar() {
+    const topbar = document.querySelector("..topbar");
+    topbar.style.opacity = 1;
   }
 
-  function fadeInlinksAndName() {
-    const name = document.querySelector(".name");
-    const links = document.querySelector(".linksBar");
+  const mainVideo = document.querySelector(".main-video");
 
-    name.style.opacity = 1;
-    links.style.opacity = 1;
-  }
-
+  setTimeout(() => {
+    mainVideo.style.transition = "height 2s ease";
+  }, 5000);
   setTimeout(function () {
-    fadeInlinksAndName();
-  }, 0);
+    fadeInlinksAndNameBar();
+  }, 5000);
   setTimeout(function () {
     fadeInMainVideo();
   }, 1000);
@@ -76,25 +78,14 @@ portfolioItems.forEach((item) => {
   setInterval(showNextImage, 3000); // Change image every 1 second
 });
 
-  portfolioItems.forEach(item => {
-    item.addEventListener('mouseenter', function() {
-      item.style.transform = 'scale(1.02)'; // Increase size on hover
-      item.style.borderColor = '#e31e67'; // Change frame color
-    });
-
-    item.addEventListener('mouseleave', function() {
-      item.style.transform = 'scale(1)'; // Revert size
-      item.style.borderColor = '#9ea1a5'; // Revert frame color
-    });
+portfolioItems.forEach((item) => {
+  item.addEventListener("mouseenter", function () {
+    item.style.transform = "scale(1.02)"; // Increase size on hover
+    item.style.borderColor = "#e31e67"; // Change frame color
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the main video element
-    const mainVideo = document.querySelector(".main-video");
-  
-    // Function to reduce the height of the main video after 5 seconds
-    setTimeout(() => {
-      mainVideo.style.height = "75%";
-      mainVideo.style.transition = "height 2s ease";
-    }, 5000);
+  item.addEventListener("mouseleave", function () {
+    item.style.transform = "scale(1)"; // Revert size
+    item.style.borderColor = "#9ea1a5"; // Revert frame color
   });
+});
