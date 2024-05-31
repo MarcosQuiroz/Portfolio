@@ -14,13 +14,13 @@ body {
 }
 
 .topbar {
-  background: rgba(27, 27, 27, 0.7);
+  background: rgba(27, 27, 27, 0.8);
   position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
-  height: 15vh;
+  height: 10vh;
   z-index: 9999;
 }
 
