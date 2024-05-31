@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     fadeInlinksAndNameBar();
   }, 3000);
-  setTimeout(function () {
+  /*setTimeout(function () {
     fadeInMainVideo();
   }, 1000);
   setTimeout(function () {
     fadeInBar();
-  }, 2000);
+  }, 2000);*/
 
   var linkButtons = document.querySelectorAll(".LinkButton");
 
