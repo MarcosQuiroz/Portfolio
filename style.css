@@ -13,19 +13,22 @@ body {
   margin: 0;
 }
 
-.topbar, .project-bar {
-  background: #1b1b1b;
+.topbar {
+  background: rgba(27, 27, 27, 0.7);
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
+  height: 15vh;
+  z-index: 9999;
 }
 
-.topbar {
-  height: 10vh;
-}
-
-.project-bar {
+.project-bar{
+  background: #1b1b1b;
+  width: 100%;
+  display: flex;
+  align-items: center;
   height: 25vh;
   flex-direction: column;
   justify-content: center;
@@ -210,12 +213,15 @@ body {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 1000px;
   text-align: center;
   color: ghostwhite;
 }
 
 .content h2 {
+  background: linear-gradient(to right, #e31e67, purple);
+  background-clip: text;
+  color: transparent;
   font-size: 60px;
 }
 
@@ -294,6 +300,32 @@ a {
 .portfolio-info p {
   font-size: 14px; /* Increased font size */
   color: #9ea1a5;
+}
+
+.contact-bar{
+  background: #1b1b1b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5vh; /* Added spacing */
+}
+
+.contact-bar h2 {
+  background: linear-gradient(to right, #e31e67, purple);
+  background-clip: text;
+  color: transparent;
+  font-size: 50px; /* Increased font size */
+  margin-bottom: 10px;
+}
+
+.contact-bar p {
+  color: #9ea1a5;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 768px) {
