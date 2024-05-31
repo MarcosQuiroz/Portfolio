@@ -23,12 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     videoDisplayTransitionsHandler();
   }, 3000);
-  /*setTimeout(function () {
-    fadeInMainVideo();
-  }, 1000);
-  setTimeout(function () {
-    fadeInBar();
-  }, 2000);*/
 
   var linkButtons = document.querySelectorAll(".LinkButton");
 
