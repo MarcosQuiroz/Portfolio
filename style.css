@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,6 @@ body {
 
 .topbar, .project-bar {
   background: #1b1b1b;
-  margin: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -31,14 +31,14 @@ body {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  margin-top: 3vh;
+  margin-top: 5vh; /* Added spacing */
 }
 
 .project-bar h2 {
   background: linear-gradient(to right, #e31e67, purple);
   background-clip: text;
   color: transparent;
-  font-size: 40px;
+  font-size: 50px; /* Increased font size */
   margin-bottom: 10px;
 }
 
@@ -187,7 +187,7 @@ body {
 
 .main-video {
   margin-top: 5vh;
-  width: 90%;
+  width: 90%; /* Adjusted width */
   height: auto;
   object-fit: cover;
   opacity: 0;
@@ -238,11 +238,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 2%; /* Added padding to the sides */
 }
 
 .portfolio-item {
-  width: 30%;
-  height: calc(2 * (30vw)); /* 2 times the width */
+  width: 14%; /* Reduced width */
+  height: calc(2 * (14vw)); /* 2 times the width */
   background-color: #1f2f3f;
   border-radius: 15px;
   overflow: hidden;
@@ -255,7 +256,7 @@ a {
 
 .portfolio-image {
   width: 100%;
-  height: 60%; /* Adjusted height */
+  height: 50%; /* Adjusted height */
   overflow: hidden;
   position: relative;
 }
@@ -277,19 +278,19 @@ a {
 
 .portfolio-info {
   width: 100%;
-  height: 40%; /* Adjusted height */
-  padding: 20px;
+  height: 50%; /* Adjusted height */
+  padding: 10px;
   color: ghostwhite;
   text-align: center;
 }
 
 .portfolio-info h3 {
-  font-size: 24px;
+  font-size: 18px; /* Increased font size */
   margin-bottom: 10px;
 }
 
 .portfolio-info p {
-  font-size: 16px;
+  font-size: 14px; /* Increased font size */
   color: #9ea1a5;
 }
 
