@@ -75,3 +75,15 @@ portfolioItems.forEach((item) => {
   images[currentIndex].classList.add("active"); // Initially show the first image
   setInterval(showNextImage, 1000); // Change image every 1 second
 });
+
+  portfolioItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+      item.style.transform = 'scale(1.02)'; // Increase size on hover
+      item.style.borderColor = '#e31e67'; // Change frame color
+    });
+
+    item.addEventListener('mouseleave', function() {
+      item.style.transform = 'scale(1)'; // Revert size
+      item.style.borderColor = '#9ea1a5'; // Revert frame color
+    });
+  });

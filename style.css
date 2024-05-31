@@ -242,16 +242,23 @@ a {
 }
 
 .portfolio-item {
-  width: 14%; /* Reduced width */
-  height: calc(2 * (14vw)); /* 2 times the width */
+  width: 30%;
+  height: calc(2 * (30vw)); /* 2 times the width */
   background-color: #1f2f3f;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 5vh;
-  transition: all 0.5s ease-out;
+  transition: all 1.0s ease-out;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 3px solid #9ea1a5; /* Add frame */
+  transition: all 0.3s ease-in-out; /* Smooth transition for size change */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  border-color: linear-gradient(to right, #e31e67, purple); /* Change frame color */
 }
 
 .portfolio-image {
