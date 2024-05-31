@@ -73,7 +73,7 @@ portfolioItems.forEach((item) => {
   }
 
   images[currentIndex].classList.add("active"); // Initially show the first image
-  setInterval(showNextImage, 1000); // Change image every 1 second
+  setInterval(showNextImage, 3000); // Change image every 1 second
 });
 
   portfolioItems.forEach(item => {
