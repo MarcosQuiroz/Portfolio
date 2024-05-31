@@ -15,10 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     topbar.style.opacity = 1;
   }
 
-  const mainVideo = document.querySelector(".main-video");
-  
-  setTimeout(() => {
+  function resizeVideoHeight() {
+    const mainVideo = document.querySelector(".main-video");
     mainVideo.style.height = "75%";
+  }
+
+  setTimeout(() => {
+    resizeVideoHeight();
   }, 3000);
   setTimeout(function () {
     fadeInlinksAndNameBar();
