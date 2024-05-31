@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
-  height: 10vh;
+  height: 6vh;
   z-index: 9999;
 }
 
@@ -293,12 +293,15 @@ a {
 }
 
 .portfolio-info h3 {
-  font-size: 18px; /* Increased font size */
+  background: linear-gradient(to right, #e31e67, purple);
+  background-clip: text;
+  color: transparent;
+  font-size: 36px; /* Increased font size */
   margin-bottom: 10px;
 }
 
 .portfolio-info p {
-  font-size: 14px; /* Increased font size */
+  font-size: 20px; /* Increased font size */
   color: #9ea1a5;
 }
 
