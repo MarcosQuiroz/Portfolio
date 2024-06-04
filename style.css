@@ -306,17 +306,17 @@ a {
   background: linear-gradient(to right, #e31e67, purple);
   background-clip: text;
   color: transparent;
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
 .portfolio-info p {
-  font-size: 18px;
+  font-size: 27px;
   color: ghostwhite;
 }
 
 .portfolio-info ul{
-  font-size: 14;
+  font-size: 21px;
   color: #9ea1a5;
 }
 
