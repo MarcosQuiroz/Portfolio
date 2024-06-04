@@ -1,14 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-/*  function fadeInMainVideo() {
-    const main_video = document.querySelector(".main-video");
-    main_video.style.opacity = 1;
-  }
-
-  function fadeInBar() {
-    const bar = document.querySelector(".bar");
-    bar.style.opacity = 1;
-    bar.style.transform = "translateX(0px)";
-  }*/
   function videoDisplayTransitionsHandler() {
     const mainVideo = document.querySelector(".main-video");
     mainVideo.style.height = "75%";
