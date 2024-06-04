@@ -306,18 +306,19 @@ a {
   background: linear-gradient(to right, #e31e67, purple);
   background-clip: text;
   color: transparent;
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
 .portfolio-info p {
-  font-size: 40px;
+  font-size: 18px;
   color: ghostwhite;
 }
 
-.portfolio-info ul{
-  justify-content: right;
-  font-size: 32;
+.portfolio-info ul li{
+  text-align: left;
+  margin-left: 15%;
+  font-size: 14;
   color: #9ea1a5;
 }
 
