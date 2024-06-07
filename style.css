@@ -227,6 +227,11 @@ body {
   padding: 0 2%;
 }
 
+.portfolio-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .portfolio-item {
   width: 30%;
   height: calc(2 * (30vw));
