@@ -26,40 +26,6 @@ body {
   transition: all 3s ease-out;
 }
 
-.project-bar{
-  background: #1b1b1b;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: 25vh;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  margin-top: 5vh; /* Added spacing */
-}
-
-.project-bar h2 {
-  background: linear-gradient(to right, #e31e67, purple);
-  background-clip: text;
-  color: transparent;
-  font-size: 50px; /* Increased font size */
-  margin-bottom: 10px;
-}
-
-.project-bar p {
-  color: #9ea1a5;
-  font-size: 18px;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  background-color: #1c2a39;
-  background-position: center;
-  background-size: cover;
-}
-
 .name {
   font-size: 28px;
   text-decoration: none;
@@ -157,29 +123,14 @@ body {
     top: 0;
     left: 0;
   }
+}
 
-  .portfolio-item {
-    flex-direction: column;
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  .portfolio-image {
-    width: 100%;
-  }
-
-  .project-bar {
-    height: auto;
-    padding: 10px;
-  }
-
-  .project-bar h2 {
-    font-size: 24px;
-  }
-
-  .project-bar p {
-    font-size: 16px;
-  }
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #1c2a39;
+  background-position: center;
+  background-size: cover;
 }
 
 .main_content {
@@ -239,15 +190,33 @@ body {
   line-height: 40px;
   color: #9ea1a5;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
-a {
-  color: #fff;
+.project-bar {
+  background: #1b1b1b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5vh;
 }
 
-/* Resume */
-.resume {
-  padding: 30px;
+.project-bar h2 {
+  background: linear-gradient(to right, #e31e67, purple);
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.project-bar p {
+  color: #9ea1a5;
+  font-size: 18px;
 }
 
 .portfolio {
@@ -255,12 +224,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 2%; /* Added padding to the sides */
+  padding: 0 2%;
 }
 
 .portfolio-item {
   width: 30%;
-  height: calc(2 * (30vw)); /* 2 times the width */
+  height: calc(2 * (30vw));
   background-color: #1f2f3f;
   border-radius: 15px;
   overflow: hidden;
@@ -268,13 +237,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid #9ea1a5; /* Add frame */
+  border: 3px solid #9ea1a5;
   transition: all 0.5s ease-out;
 }
 
 .portfolio-image {
   width: 100%;
-  height: 50%; /* Adjusted height */
+  height: 50%;
   overflow: hidden;
   position: relative;
 }
@@ -296,7 +265,7 @@ a {
 
 .portfolio-info {
   width: 100%;
-  height: 50%; /* Adjusted height */
+  height: 50%;
   padding: 10px;
   color: ghostwhite;
   text-align: center;
@@ -306,26 +275,56 @@ a {
   background: linear-gradient(to right, #e31e67, purple);
   background-clip: text;
   color: transparent;
-  font-size: 60px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .portfolio-info p {
-  font-size: 27px;
+  font-size: 18px;
   color: #9ea1a5;
 }
 
-.portfolio-info ul{
-  font-size: 21px;
+.portfolio-info ul {
+  font-size: 16px;
   color: ghostwhite;
 }
 
-.portfolio-info ul li{
+.portfolio-info ul li {
   text-align: left;
   margin-left: 15%;
 }
 
-.contact-bar{
+@media only screen and (max-width: 768px) {
+  .portfolio-item {
+    width: 45%;
+    height: calc(2 * (45vw));
+  }
+
+  .portfolio-info h3 {
+    font-size: 24px;
+  }
+
+  .portfolio-info p, .portfolio-info ul {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-item {
+    width: 100%;
+    height: calc(2 * (100vw));
+  }
+
+  .portfolio-info h3 {
+    font-size: 20px;
+  }
+
+  .portfolio-info p, .portfolio-info ul {
+    font-size: 12px;
+  }
+}
+
+.contact-bar {
   background: #1b1b1b;
   width: 100%;
   display: flex;
@@ -335,14 +334,14 @@ a {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  margin-top: 5vh; /* Added spacing */
+  margin-top: 5vh;
 }
 
 .contact-bar h2 {
   background: linear-gradient(to right, #e31e67, purple);
   background-clip: text;
   color: transparent;
-  font-size: 50px; /* Increased font size */
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
@@ -351,15 +350,6 @@ a {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 768px) {
-  .portfolio-item {
-    width: 45%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .portfolio-item {
-    width: 100%;
-    height: calc(2 * (100vw)); /* Adjusted for mobile */
-  }
+a {
+  color: #fff;
 }
