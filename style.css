@@ -297,7 +297,7 @@ body {
 @media only screen and (max-width: 768px) {
   .portfolio-item {
     width: 100%;
-    height: calc(2 * (45vw));
+    height: 100vh;
     flex-direction: row;
   }
 
@@ -346,15 +346,15 @@ body {
   }
 
   .portfolio-info h3 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .portfolio-info p {
-    font-size: 24px;
+    font-size: 20px;
   } 
   
   .portfolio-info ul {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
