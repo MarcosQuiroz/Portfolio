@@ -227,13 +227,10 @@ body {
   padding: 0 2%;
 }
 
-.portfolio-link {
+.portfolio-item {
   display: block;
   width: 100%;
   text-decoration: none;
-}
-
-.portfolio-item {
   width: 30%;
   height: calc(2 * (30vw));
   background-color: #1f2f3f;
