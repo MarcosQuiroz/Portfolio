@@ -223,8 +223,8 @@ body {
   margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 2%;
+  gap: 5%;
+  padding: 3%;
 }
 
 .portfolio-item {
