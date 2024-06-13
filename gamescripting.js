@@ -1,21 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll(".tab");
-    const tabContents = document.querySelectorAll(".tab-content");
-  
-    tabs.forEach(tab => {
-      tab.addEventListener("click", function () {
-        const target = document.querySelector(`#tab-content-${this.dataset.tab}`);
-        target.style.display = target.style.display === "block" ? "none" : "block";
-      });
+  const tabs = document.querySelectorAll(".tab");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+      const content = this.querySelector(".tab-content");
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        tabs.forEach(t => t.querySelector(".tab-content").style.display = "none");
+        content.style.display = "block";
+      }
     });
-  
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.background-image');
-  
-    setInterval(() => {
-      images[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % images.length;
-      images[currentIndex].classList.add('active');
-    }, 3000);
   });
-  
+});
