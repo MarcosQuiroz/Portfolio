@@ -118,7 +118,9 @@ body, html {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  color: ghostwhite;
+  background: linear-gradient(to right, #e31e67, purple);
+  background-clip: text;
+  color: transparent
 }
 
 .info {
@@ -136,7 +138,7 @@ body, html {
   flex: 1;
   font-size: 20px;
   font-weight: bold;
-  color: ghostwhite;
+  color: #9ea1a5;
   text-align: right;
   padding-right: 10px;
 }
@@ -157,7 +159,7 @@ body, html {
 
   .info-title,
   .info-data {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -170,7 +172,7 @@ body, html {
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: ghostwhite;
+  color: #9ea1a5;
 }
 
 .about-info {
@@ -203,7 +205,7 @@ body, html {
 .tab {
   width: 80%;
   margin: 10px auto;
-  background-color: rgb(27,27,27);
+  background: linear-gradient(to right, #e31e67, purple);
   color: ghostwhite;
   border-radius: 15px;
   padding: 10px;
@@ -214,6 +216,7 @@ body, html {
 .tab-title {
   font-size: 25px;
   margin-left: 10px;
+  color: #1b1b1b;
 }
 
 .tab-content {
@@ -239,7 +242,7 @@ body, html {
 }
 
 .tab:hover {
-   border: 1px solid #e31e67;
+   border: 3px solid #1b1b1b;
   .tab-title{
     font-size: 35px;
   }
