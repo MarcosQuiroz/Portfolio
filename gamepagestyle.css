@@ -296,7 +296,7 @@ body, html {
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .tab-content {
     flex-direction: column;
   }
@@ -312,6 +312,14 @@ body, html {
   }
 }
 
+.tab-title.active {
+  background-color: #e31e67;
+  color: white;
+}
+
+.tab-content.active {
+  display: block;
+}
 
 .tab:hover {
   border: 3px solid #1b1b1b;

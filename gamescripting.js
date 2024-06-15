@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document.querySelectorAll(".tab");
+  const tabs = document.querySelectorAll(".tab-title");
 
-  tabs.forEach(tab => {
+  tabs.forEach((tab) => {
     tab.addEventListener("click", function () {
-      const content = this.querySelector(".tab-content");
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
 
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        tabs.forEach(t => t.querySelector(".tab-content").style.display = "none");
-        content.style.display = "block";
-      }
+      const tabContent = tab.nextElementSibling;
+      const allTabContents = document.querySelectorAll(".tab-content");
+      allTabContents.forEach((tc) => tc.classList.remove("active"));
+      tabContent.classList.add("active");
     });
   });
+
 
   const images = document.querySelectorAll(".background-image");
   let currentIndex = 0;
