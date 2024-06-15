@@ -277,6 +277,34 @@ body, html {
   margin-top: 20px;
 }
 
+.tab-content .zip-files {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tab-content .zip-files a {
+  color: #e31e67;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.tab-content .zip-files a:hover {
+  text-decoration: underline;
+}
+
+.tab-content .zip-files .file-name {
+  margin-right: 10px;
+}
+
+.tab-content .zip-files img {
+  width: 20px;
+  height: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   .tab-content {
     flex-direction: column;
@@ -292,7 +320,6 @@ body, html {
     text-align: center;
   }
 }
-
 
 .tab:hover {
   border: 3px solid #1b1b1b;
