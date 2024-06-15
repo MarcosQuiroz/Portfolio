@@ -2,19 +2,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab");
 
   tabs.forEach(tab => {
+    const tabTitle = tab.querySelector(".tab-title");
     const tabContent = tab.querySelector(".tab-content");
     
     tabContent.style.display = "none";
 
-    tab.addEventListener("click", function () {
+    tabTitle.addEventListener("click", function () {
       if (tabContent.style.display === "none") {
-        closeAllTabs();
+        closeAllTabs(); 
         tabContent.style.display = "block";
       } else {
         tabContent.style.display = "none";
       }
     });
   });
+
+  function closeAllTabs() {
+    tabs.forEach(tab => {
+      const tabContent = tab.querySelector(".tab-content");
+      tabContent.style.display = "none";
+    });
+  }
+
 
   const images = document.querySelectorAll(".background-image");
   let currentIndex = 0;
