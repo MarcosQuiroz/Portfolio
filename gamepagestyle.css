@@ -242,26 +242,76 @@ body, html {
 }
 
 .tab-content {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
   padding: 10px;
   background-color: #1f2f3f;
   border-radius: 10px;
 }
 
-.tab-content p,
-.tab-content ul {
-  font-size: 20px;
+.tab-content .video-container {
+  flex: 0 0 50%;
+  padding: 0 2.5%;
 }
 
-.tab-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
+.tab-content .video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
-.tab-content ul li {
-  margin-bottom: 10px;
+.tab-content .description {
+  flex: 0 0 50%;
+  padding: 0 2.5%;
+  color: ghostwhite;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
 }
+
+.tab-content .zip-files {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tab-content .zip-files a {
+  color: #e31e67;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.tab-content .zip-files a:hover {
+  text-decoration: underline;
+}
+
+.tab-content .zip-files .file-name {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tab-content {
+    flex-direction: column;
+  }
+
+  .tab-content .video-container,
+  .tab-content .description {
+    flex: 1 0 100%;
+    padding: 0 5%;
+  }
+
+  .tab-content .description {
+    text-align: center;
+  }
+}
+
 
 .tab:hover {
   border: 3px solid #1b1b1b;
