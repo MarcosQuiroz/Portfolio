@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         tabs.forEach(t => t.querySelector(".tab-content").classList.remove("active"));
         tabContent.classList.add("active");
+        tabContent.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     });
   });
