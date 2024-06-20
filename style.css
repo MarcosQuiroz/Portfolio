@@ -188,9 +188,10 @@ body {
 
 .content p {
   line-height: 40px;
-  color: #9ea1a5;
+  color: ghostwhite;
   font-size: 20px;
   margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 .project-bar {
@@ -217,6 +218,7 @@ body {
 .project-bar p {
   color: #9ea1a5;
   font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .portfolio {
@@ -272,6 +274,7 @@ body {
   padding: 10px;
   color: ghostwhite;
   text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .portfolio-info h3 {
@@ -372,6 +375,7 @@ body {
   text-align: center;
   padding: 20px;
   margin-top: 5vh;
+  letter-spacing: 0.5px;
 }
 
 .contact-bar h2 {
