@@ -146,153 +146,164 @@
             </div>
           </div>
 
-            <div class="tab">
-              <div class="tab-title">Obstacles and Enemies (Dangers)</div>
-              <div class="tab-content">
-                <div class="video-container">
-                  <video
-                    class="video"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    preload="metadata"
-                  >
-                    <source
-                      src="videos/Carpe Dino/DangerManager.mp4"
-                      type="video/mp4"
+          <div class="tab">
+            <div class="tab-title">Obstacles and Enemies (Dangers)</div>
+            <div class="tab-content">
+              <div class="video-container">
+                <video
+                  class="video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source
+                    src="videos/Carpe Dino/DangerManager.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="description">
+                <p>
+                  I developed an obstacle and enemy (Dangers) spawning system to
+                  enhance the dynamic challenge in the game. This system
+                  leverages a structured data-driven approach using the
+                  DangerSpawnerData and IntervalsOfSpawningData structs. Each
+                  DangerSpawnerData instance defines the type of danger, pool
+                  size, initial delay, and intervals of spawning, allowing for
+                  precise control over the spawning behavior throughout the
+                  game.
+                  <br /><br />
+                  The DangerSpawnerManager script manages multiple danger
+                  spawners, each capable of targeting either the player or a
+                  partner character. This flexibility ensures that the gameplay
+                  remains unpredictable and engaging. The spawner adjusts its
+                  behavior based on the game's timer and specific intervals,
+                  modifying spawn rates to maintain an appropriate difficulty
+                  curve as the game progresses.
+                  <br /><br />
+                  To efficiently handle the dangers, I implemented a pooling
+                  system through the DangerPool class. This system minimizes
+                  performance overhead by reusing instantiated danger objects,
+                  ensuring a smooth gaming experience even during intense
+                  gameplay moments. By dynamically adjusting the spawning logic
+                  and efficiently managing resources, this system significantly
+                  contributes to the game's challenging and immersive
+                  environment.
+                </p>
+                <div class="zip-files">
+                  <a href="documents/Carpe Dino/Scripts/Danger.zip" download>
+                    <span class="file-name">Danger Manager Code Snippet</span>
+                    <img
+                      src="images/ZipIcon.png"
+                      alt="Download Icon"
+                      width="20"
+                      height="20"
                     />
-                  </video>
-                </div>
-                <div class="description">
-                  <p>
-                    I developed an obstacle and enemy (Dangers) spawning system
-                    to enhance the dynamic challenge in the game. This system leverages a structured
-                    data-driven approach using the DangerSpawnerData and IntervalsOfSpawningData structs.
-                    Each DangerSpawnerData instance defines the type of danger, pool size, initial delay, 
-                    and intervals of spawning, allowing for precise control over the spawning behavior 
-                    throughout the game.
-                    </br></br>
-                    The DangerSpawnerManager script manages multiple danger spawners, each capable of targeting 
-                    either the player or a partner character. This flexibility ensures that the gameplay remains 
-                    unpredictable and engaging. The spawner adjusts its behavior based on the game's timer
-                    and specific intervals, modifying spawn rates to maintain an appropriate difficulty curve
-                    as the game progresses.
-                    </br></br>
-                    To efficiently handle the dangers, I implemented a pooling system through the DangerPool class. 
-                    This system minimizes performance overhead by reusing instantiated danger objects, ensuring a smooth 
-                    gaming experience even during intense gameplay moments. By dynamically adjusting the spawning logic 
-                    and efficiently managing resources, this system significantly contributes to the game's challenging 
-                    and immersive environment.
-                  </p>
-                  <div class="zip-files">
-                    <a
-                      href="documents/Carpe Dino/Scripts/Danger.zip"
-                      download
-                    >
-                      <span class="file-name">Danger Manager Code Snippet</span>
-                      <img
-                        src="images/ZipIcon.png"
-                        alt="Download Icon"
-                        width="20"
-                        height="20"
-                      />
-                    </a>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="tab">
-              <div class="tab-title">NPC movement (Navigation System) and Behavior</div>
-              <div class="tab-content">
-                <div class="video-container">
-                  <video
-                    class="video"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    preload="metadata"
+          <div class="tab">
+            <div class="tab-title">
+              NPC movement (Navigation System) and Behavior
+            </div>
+            <div class="tab-content">
+              <div class="video-container">
+                <video
+                  class="video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source
+                    src="videos/Carpe Dino/NPCNavMesh.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="description">
+                <p>
+                  The PartnerController class is pivotal for managing NPC
+                  partners, using Unity's NavMesh system for effective
+                  navigation and intelligent behavior. It dynamically adjusts
+                  paths to intercept or evade dangers, enhancing player
+                  strategy. The PartnerCharacter parent class standardizes
+                  essential functionalities like energy management and ability
+                  animations across different partners, ensuring consistency. I
+                  developed the Oska class to add unique abilities, such as a
+                  timed key sequence challenge, which requires quick player
+                  reactions, making gameplay more engaging and interactive.
+                </p>
+                <div class="zip-files">
+                  <a
+                    href="documents/Carpe Dino/Scripts/NPC Partner Character.zip"
+                    download
                   >
-                    <source
-                      src="videos/Carpe Dino/NPCNavMesh.mp4"
-                      type="video/mp4"
+                    <span class="file-name">NPC Code Snippet</span>
+                    <img
+                      src="images/ZipIcon.png"
+                      alt="Download Icon"
+                      width="20"
+                      height="20"
                     />
-                  </video>
-                </div>
-                <div class="description">
-                  <p>
-                    The PartnerController class is pivotal for managing NPC partners, using Unity's NavMesh system
-                    for effective navigation and intelligent behavior. It dynamically adjusts paths to intercept or evade dangers, 
-                    enhancing player strategy. The PartnerCharacter parent class standardizes essential functionalities like 
-                    energy management and ability animations across different partners, ensuring consistency. 
-                    I developed the Oska class to add unique abilities, such as a timed key sequence challenge, 
-                    which requires quick player reactions, making gameplay more engaging and interactive.
-                  </p>
-                  <div class="zip-files">
-                    <a
-                      href="documents/Carpe Dino/Scripts/NPC Partner Character.zip"
-                      download
-                    >
-                      <span class="file-name">NPC Code Snippet</span>
-                      <img
-                        src="images/ZipIcon.png"
-                        alt="Download Icon"
-                        width="20"
-                        height="20"
-                      />
-                    </a>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="tab">
-              <div class="tab-title">Mini-game Input</div>
-              <div class="tab-content">
-                <div class="video-container">
-                  <video
-                    class="video"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    preload="metadata"
+          <div class="tab">
+            <div class="tab-title">Mini-game Input</div>
+            <div class="tab-content">
+              <div class="video-container">
+                <video
+                  class="video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source
+                    src="videos/Carpe Dino/MinigameInput.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="description">
+                <p>
+                  The PlayersInput script is crucial for managing player and
+                  partner controls during mini-games, using Unity's Input System
+                  for smooth, responsive interactions. It allows player movement
+                  via WASD keys and partner control with arrow keys, or
+                  automatically if preferred. The script also handles special
+                  abilities, partner shield toggling, and game pauses, adding
+                  strategic depth. Additionally, it includes haptic feedback for
+                  immersive, tactile responses, enhancing the overall gameplay
+                  experience.
+                </p>
+                <div class="zip-files">
+                  <a
+                    href="documents/Carpe Dino/Scripts/Player Input.zip"
+                    download
                   >
-                    <source
-                      src="videos/Carpe Dino/MinigameInput.mp4"
-                      type="video/mp4"
+                    <span class="file-name">Mini-game Input Code Snippet</span>
+                    <img
+                      src="images/ZipIcon.png"
+                      alt="Download Icon"
+                      width="20"
+                      height="20"
                     />
-                  </video>
-                </div>
-                <div class="description">
-                  <p>
-                    The PlayersInput script is crucial for managing player and partner controls during mini-games, 
-                    using Unity's Input System for smooth, responsive interactions. It allows player movement 
-                    via WASD keys and partner control with arrow keys, or automatically if preferred. 
-                    The script also handles special abilities, partner shield toggling, and game pauses, adding strategic depth. 
-                    Additionally, it includes haptic feedback for immersive, tactile responses, enhancing the overall 
-                    gameplay experience.
-                  </p>
-                  <div class="zip-files">
-                    <a
-                      href="documents/Carpe Dino/Scripts/Player Input.zip"
-                      download
-                    >
-                      <span class="file-name">Mini-game Input Code Snippet</span>
-                      <img
-                        src="images/ZipIcon.png"
-                        alt="Download Icon"
-                        width="20"
-                        height="20"
-                      />
-                    </a>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

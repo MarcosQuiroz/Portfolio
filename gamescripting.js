@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab");
 
-  tabs.forEach(tab => {
+  tabs.forEach((tab) => {
     const tabTitle = tab.querySelector(".tab-title");
     const tabContent = tab.querySelector(".tab-content");
 
@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (tabContent.classList.contains("active")) {
         tabContent.classList.remove("active");
       } else {
-        tabs.forEach(t => t.querySelector(".tab-content").classList.remove("active"));
+        tabs.forEach((t) =>
+          t.querySelector(".tab-content").classList.remove("active")
+        );
         tabContent.classList.add("active");
-        tabContent.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        tabContent.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     });
   });
